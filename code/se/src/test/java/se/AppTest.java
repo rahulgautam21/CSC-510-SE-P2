@@ -1,23 +1,21 @@
 package se;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
     public void shouldAnswerWithTrue()
     {
+        // Add two numbers and verify the result
         Calculator calc = new Calculator();
-        int result = calc.addNumbers(3, 5);
-        assertEquals(8, result);
+
+        int resultTrue = calc.addNumbers(3, 5);
+        assertEquals(8, resultTrue);
     }
 }
