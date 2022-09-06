@@ -1,0 +1,1 @@
+The purpose of this data folder is to contain all the data used in this project.
