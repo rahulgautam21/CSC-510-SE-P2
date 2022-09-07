@@ -1,7 +1,8 @@
-## Steps to test
-We are adding two numbers and testing whether the generated result from **addNumbers** method in **Calculator** class is correct or not. <br />
+## Objective of this implementation
+Add two numbers using **addNumbers** method in **Calculator** class and test if the generated result is correct. <br />
 
-Inside the **shouldAnswerWithTrue** method in **AppTest** class call the **addNumbers** with parameters 3 and 5. Assert whether the generated result is equal to 8 or not.
+## How to test the code?
+In **AppTest** class, call the **addNumbers** method by passing 3 and 5 as parameters in the **shouldAnswerWithTrue** method. Assert if the generated result is equal to 8 by using **assertEquals** method.
 <br />
 
 
