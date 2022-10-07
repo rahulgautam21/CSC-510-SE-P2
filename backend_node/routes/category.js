@@ -12,11 +12,11 @@ const {
 const { isSignedIn, isAdmin, isAuthenticated } = require("../controllers/auth");
 const { getUserById } = require("../controllers/user");
 
-// params
+//Get parameters
 router.param("userId", getUserById);
 router.param("categoryId", getCategoryById);
 
-// create
+//To create a category
 router.post(
   "/category/create/:userId",
   isSignedIn,
@@ -25,11 +25,11 @@ router.post(
   createCategory
 );
 
-// read
+//Fetch existing categories
 router.get("/category/:categoryId", getCategory);
 router.get("/categories", getAllCategory);
 
-// update
+//To update a category
 router.put(
   "/category/:categoryId/:userId",
   isSignedIn,
@@ -38,7 +38,7 @@ router.put(
   updateCategory
 );
 
-// delete
+//To delete a category
 router.delete(
   "/category/:categoryId/:userId",
   isSignedIn,

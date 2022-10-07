@@ -3,6 +3,7 @@ const formidable = require("formidable");
 const _ = require("lodash");
 const fs = require("fs");
 
+//Fetch details of a product specified by its ID
 exports.getProductById = (req, res, next, id) => {
   Product.findById(id)
     .populate("category")
@@ -17,6 +18,7 @@ exports.getProductById = (req, res, next, id) => {
     });
 };
 
+//Create a new product and write to DB
 exports.createProduct = (req, res) => {
   const form = new formidable.IncomingForm();
   form.keepExtensions = true;
@@ -27,7 +29,7 @@ exports.createProduct = (req, res) => {
         error: "problem with image",
       });
     }
-    // destructure the fields
+    //Restrictions to get all details
     const { name, description, price, category, stock } = fields;
 
     if (!name || !description || !price || !category || !stock) {
@@ -38,7 +40,7 @@ exports.createProduct = (req, res) => {
 
     const product = new Product(fields);
 
-    // handle file here
+    //Restriction- photo size limit should be < 3MB
     if (file.photo) {
       if (file.photo.size > 3000000) {
         return res.status(400).json({
@@ -48,9 +50,8 @@ exports.createProduct = (req, res) => {
       product.photo.data = fs.readFileSync(file.photo.path);
       product.photo.contentType = file.photo.type;
     }
-    // console.log(product);
 
-    // save to the DB
+    //Write details to DB
     product.save((err, product) => {
       if (err) {
         res.status(400).json({
@@ -62,12 +63,13 @@ exports.createProduct = (req, res) => {
   });
 };
 
+//Get details of a particular product
 exports.getProduct = (req, res) => {
   req.product.photo = undefined;
   return res.json(req.product);
 };
 
-// middleware
+
 exports.photo = (req, res, next) => {
   if (req.product.photo.data) {
     res.set("Content-Type", req.product.photo.contentType);
@@ -76,7 +78,7 @@ exports.photo = (req, res, next) => {
   next();
 };
 
-// delete controllers
+//Delete a product from the application
 exports.deleteProduct = (req, res) => {
   const product = req.product;
   product.remove((err, deletedProduct) => {
@@ -92,7 +94,7 @@ exports.deleteProduct = (req, res) => {
   });
 };
 
-// delete controllers
+//Update details of an existing product
 exports.updateProduct = (req, res) => {
   const form = new formidable.IncomingForm();
   form.keepExtensions = true;
@@ -104,11 +106,10 @@ exports.updateProduct = (req, res) => {
       });
     }
 
-    // updation code
     let product = req.product;
     product = _.extend(product, fields);
 
-    // handle file here
+    //Restriction- photo size limit should be < 3MB
     if (file.photo) {
       if (file.photo.size > 3000000) {
         return res.status(400).json({
@@ -118,9 +119,8 @@ exports.updateProduct = (req, res) => {
       product.photo.data = fs.readFileSync(file.photo.path);
       product.photo.contentType = file.photo.type;
     }
-    // console.log(product);
 
-    // save to the DB
+    //Write update to the DB
     product.save((err, product) => {
       if (err) {
         res.status(400).json({
@@ -132,8 +132,7 @@ exports.updateProduct = (req, res) => {
   });
 };
 
-// product listing
-
+//Fetch details of all products that exists
 exports.getAllProducts = (req, res) => {
   const limit = req.query.limit ? parseInt(req.query.limit) : 8;
   const sortBy = req.query.sortBy ? req.query.sortBy : "_id";
@@ -153,6 +152,7 @@ exports.getAllProducts = (req, res) => {
     });
 };
 
+//Fetch details of all distinct categories
 exports.getAllUniqueCategories = (req, res) => {
   Product.distinct("category", {}, (err, category) => {
     if (err) {
@@ -164,6 +164,7 @@ exports.getAllUniqueCategories = (req, res) => {
   });
 };
 
+//Increment sold and decrement stock of product on purchase
 exports.updateStock = (req, res, next) => {
   const myOperations = req.body.order.products.map((prod) => {
     return {

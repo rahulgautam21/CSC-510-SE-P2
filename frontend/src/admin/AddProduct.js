@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { getCategories, createaProduct } from "./helper/adminapicall";
 import { isAuthenticated } from "../auth/helper/index";
 
+//To create a new product and add it to the application
 const AddProduct = () => {
   const { user, token } = isAuthenticated();
 

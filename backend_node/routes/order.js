@@ -12,7 +12,7 @@ const {
   updateStatus,
 } = require("../controllers/order");
 
-// params
+// get parameters
 router.param("userId", getUserById);
 router.param("orderId", getOrderById);
 
@@ -44,6 +44,7 @@ router.get(
   getOrderStatus
 );
 
+//update route
 router.put(
   "/order/:orderId/status/:userId",
   isSignedIn,
