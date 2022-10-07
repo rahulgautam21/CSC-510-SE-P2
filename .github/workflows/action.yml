@@ -1,0 +1,22 @@
+name: Build Status
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - working-directory: ./frontend
+      run: npm install
+    - working-directory: ./backend_node
+      run: npm install
