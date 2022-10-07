@@ -27,5 +27,10 @@
     "nodemon": "^1.19.4",
     "npm": "^6.13.0",
     "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.31.8"
   }
 }
