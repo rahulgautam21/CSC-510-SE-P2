@@ -27,7 +27,7 @@ const Base = ({
       </div>
       <div className={className}>{children}</div>
     </div>
-    <footer className="footer bg-dark mt-auto fixed-bottom">
+    <footer className="footer bg-dark mt-auto sticky-bottom">
       <div className="container-fluid bg-blue text-white text-left py-3">
         <h6>CSC-510: Software Engineering Project</h6>
         <h6>
