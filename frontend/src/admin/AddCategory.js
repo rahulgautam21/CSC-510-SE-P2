@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import Base from "../core/Base";
-import { isAuthenticated } from "../auth/helper";
-import { Link } from "react-router-dom";
-import { createCategory } from "./helper/adminapicall";
+import React, {useState} from 'react';
+import Base from '../core/Base';
+import {isAuthenticated} from '../auth/helper';
+import {Link} from 'react-router-dom';
+import {createCategory} from './helper/adminapicall';
 
-//To create a new category and add it to the application
+// To create a new category and add it to the application
 const AddCategory = () => {
-  const [name, setName] = useState("");
+  const [name, setName] = useState('');
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const { user, token } = isAuthenticated();
+  const {user, token} = isAuthenticated();
 
   const goBack = () => (
     <div className="mt-5">
@@ -21,23 +21,23 @@ const AddCategory = () => {
   );
 
   const handleChange = (event) => {
-    setError("");
+    setError('');
     setName(event.target.value);
   };
 
   const onSubmit = (event) => {
     event.preventDefault();
-    setError("");
+    setError('');
     setSuccess(false);
 
     // backend request fired
-    createCategory(user._id, token, { name }).then((data) => {
+    createCategory(user._id, token, {name}).then((data) => {
       if (data.error) {
         setError(true);
       } else {
-        setError("");
+        setError('');
         setSuccess(true);
-        setName("");
+        setName('');
       }
     });
   };

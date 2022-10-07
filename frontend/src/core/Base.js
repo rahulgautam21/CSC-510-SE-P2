@@ -1,9 +1,9 @@
-import React from "react";
-import Menu from "./Menu";
+import React from 'react';
+import Menu from './Menu';
 
 const Base = ({
-  title = "Welcome to Walpaper Store  ",
-  className = "bg-blue text-white",
+  title = 'Welcome to Walpaper Store  ',
+  className = 'bg-blue text-white',
   children,
 }) => (
   <div>
@@ -17,7 +17,7 @@ const Base = ({
             width="45"
             height="45"
             fill="red"
-            class="bi bi-images"
+            className="bi bi-images"
             viewBox="0 0 16 16"
           >
             <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
@@ -31,17 +31,17 @@ const Base = ({
       <div className="container-fluid bg-blue text-white text-left py-3">
         <h6>CSC-510: Software Engineering Project</h6>
         <h6>
-          All rights reserved{" "}
+          All rights reserved{' '}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
             fill="red"
-            class="bi bi-heart-fill"
+            className="bi bi-heart-fill"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
             />
           </svg>

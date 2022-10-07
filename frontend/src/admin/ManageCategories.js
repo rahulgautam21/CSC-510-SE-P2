@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import Base from "../core/Base";
-import { Link } from "react-router-dom";
-import { isAuthenticated } from "../auth/helper";
-import { getCategories } from "./helper/adminapicall";
+import React, {useState, useEffect} from 'react';
+import Base from '../core/Base';
+import {Link} from 'react-router-dom';
+import {isAuthenticated} from '../auth/helper';
+import {getCategories} from './helper/adminapicall';
 
-//Update category details and write to DB
+// Update category details and write to DB
 const ManageCategories = () => {
   const [categories, setCategories] = useState([]);
 
-  const { user, token } = isAuthenticated();
+  const {user, token} = isAuthenticated();
 
   const preload = () => {
     getCategories().then((data) => {
