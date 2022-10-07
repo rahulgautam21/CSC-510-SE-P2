@@ -3,6 +3,7 @@ import { signup } from '../auth/helper'
 import Base from '../core/Base'
 import { Link } from 'react-router-dom'
 
+//This is used to display sign up page 
 const Signup = () => {
   const [values, setValues] = useState({
     name: '',
