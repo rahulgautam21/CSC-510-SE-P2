@@ -1,20 +1,19 @@
 module.exports = {
   env: {
-    browser: true
+    browser: true,
   },
   extends: [
-    'plugin:react/recommended',
-    'google'
+    "plugin:react/recommended",
+    "google",
+    "plugin:prettier/recommended",
   ],
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 8,
-    sourceType: 'module'
+    sourceType: "module",
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ["react", "prettier"],
   rules: {
-  }
-}
+    "prettier/prettier": "error",
+  },
+};
