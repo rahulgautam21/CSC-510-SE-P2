@@ -12,3 +12,7 @@ jobs:
       run: npm install
     - working-directory: ./frontend
       run: ./node_modules/.bin/eslint .
+    - working-directory: ./backend_node
+      run: npm install
+    - working-directory: ./backend_node
+      run: ./node_modules/.bin/eslint .
