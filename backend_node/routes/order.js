@@ -44,7 +44,7 @@ router.get(
   getOrderStatus
 );
 
-//update route
+// update route
 router.put(
   "/order/:orderId/status/:userId",
   isSignedIn,

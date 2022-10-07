@@ -3,7 +3,7 @@ const router = express.Router();
 const { check, validationResult } = require("express-validator");
 const { signout, signup, signin, isSignedIn } = require("../controllers/auth");
 
-//Restrictions for sign up
+// Restrictions for sign up
 router.post(
   "/signup",
   [
@@ -16,7 +16,7 @@ router.post(
   signup
 );
 
-//Restrictions for sign in
+// Restrictions for sign in
 router.post(
   "/signin",
   [
