@@ -14,7 +14,7 @@ const AddCategory = () => {
 
   const goBack = () => (
     <div className="mt-5">
-      <Link className="btn btn-sm btn-success mb-3" to="/admin/dashboard">
+      <Link className="btn btn-sm btn-danger mb-3" to="/admin/dashboard">
         Admin Home
       </Link>
     </div>
@@ -67,7 +67,7 @@ const AddCategory = () => {
           required
           placeholder="For Ex. Summer"
         />
-        <button onClick={onSubmit} className="btn btn-outline-info">
+        <button onClick={onSubmit} className="btn btn-info">
           Create Category
         </button>
       </div>
@@ -78,7 +78,7 @@ const AddCategory = () => {
     <Base
       title="Create a category here"
       description="Add a new category for new tshirts"
-      className="container bg-info p-4"
+      className="container bg-danger p-4"
     >
       <div className="row bg-white rounded">
         <div className="col-md-8 offset-md-2">
