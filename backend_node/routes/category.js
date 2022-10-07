@@ -27,6 +27,18 @@ router.post(
 
 //Fetch existing categories
 router.get("/category/:categoryId", getCategory);
+
+/**
+ * @swagger
+ * /categories:
+ *  get:
+ *    description: Fetch all existing categories
+ *    responses:
+ *      '200':
+ *        description: A successful response
+ *      '400':
+ *        description: NO categories found
+ */
 router.get("/categories", getAllCategory);
 
 //To update a category
