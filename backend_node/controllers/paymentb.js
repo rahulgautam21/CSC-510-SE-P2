@@ -7,7 +7,7 @@ const gateway = braintree.connect({
   privateKey: "402fb701e40619e6d2fbe763f29f758a",
 });
 
-//Generate a gateway token for payment
+// Generate a gateway token for payment
 exports.getToken = (req, res) => {
   gateway.clientToken.generate({}, function (err, response) {
     if (err) {
@@ -18,7 +18,7 @@ exports.getToken = (req, res) => {
   });
 };
 
-//Process payment on receiving payment method details and amount 
+// Process payment on receiving payment method details and amount
 exports.processPayment = (req, res) => {
   const nonceFromTheClient = req.body.paymentMethodNonce;
 
