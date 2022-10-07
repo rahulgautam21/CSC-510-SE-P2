@@ -27,19 +27,27 @@
     "morgan": "^1.9.1",
     "nodemon": "^1.19.4",
     "npm": "^6.13.0",
-    "uuid": "^3.3.3",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "eslint": "^8.24.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.8",
-    "prettier": "2.7.1",
-    "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
-    "mocha": "^6.2.2"
-
-  }
+    "mocha": "^6.2.2",
+    "prettier": "2.7.1"
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "extends": [
+    "plugin:prettier/recommended"
+  ]
 }

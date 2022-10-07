@@ -11,8 +11,12 @@ jobs:
     - working-directory: ./frontend
       run: npm install
     - working-directory: ./frontend
-      run: ./node_modules/.bin/eslint .
+      run: ./node_modules/.bin/eslint . --fix
+    - working-directory: ./frontend
+      run: ./node_modules/.bin/prettier . --write
     - working-directory: ./backend_node
       run: npm install
     - working-directory: ./backend_node
-      run: ./node_modules/.bin/eslint .
+      run: ./node_modules/.bin/eslint . --fix
+    - working-directory: ./backend_node
+      run: ./node_modules/.bin/prettier . --write
