@@ -1,0 +1,15 @@
+name: Lint
+
+on: [push]
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run ESLint
+      run: |
+        ls
+        cd ./frontend
+        eslint . --ext .js,.jsx,.ts,.tsx
+        cd ../backend_node
+        eslint . --ext .js,.jsx,.ts,.tsx
