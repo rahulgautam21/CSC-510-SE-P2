@@ -4,6 +4,10 @@
 [![SonarQube Analysis](https://github.com/Sneha1b/CSC-510-SE/actions/workflows/sonarcloud.yml/badge.svg)](https://github.com/Sneha1b/CSC-510-SE/actions/workflows/sonarcloud.yml)
 [![Code Linting Analysis Report](https://github.com/Sneha1b/CSC-510-SE/actions/workflows/lint.yml/badge.svg)](https://github.com/Sneha1b/CSC-510-SE/actions/workflows/lint.yml)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Sneha1b/CSC-510-SE/blob/main/README.md)
+[![GitHub issues](https://img.shields.io/github/issues/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/issues?q=is%3Aopen)
+[![Github pull requests](https://img.shields.io/github/issues-pr/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/pulls)
+[![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/pulls?q=is%3Apr+is%3Aclosed)
 
 # Description
 The project was taken up as a part of the course work for CSC 510 Software Engineering during Masters. The project aims at creating a microservice, build it ground up and understand various aspects of software development in the industry.
