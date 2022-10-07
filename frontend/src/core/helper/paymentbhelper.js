@@ -6,13 +6,13 @@ export const getmeToken = (userId, token) => {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`
-    }
+      Authorization: `Bearer ${token}`,
+    },
   })
-    .then(response => {
+    .then((response) => {
       return response.json();
     })
-    .catch(err => console.log(err));
+    .catch((err) => console.log(err));
 };
 
 export const processPayment = (userId, token, paymentInfo) => {
@@ -21,12 +21,12 @@ export const processPayment = (userId, token, paymentInfo) => {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`
+      Authorization: `Bearer ${token}`,
     },
-    body: JSON.stringify(paymentInfo)
+    body: JSON.stringify(paymentInfo),
   })
-    .then(reponse => {
+    .then((reponse) => {
       return reponse.json();
     })
-    .catch(err => console.log(err));
+    .catch((err) => console.log(err));
 };

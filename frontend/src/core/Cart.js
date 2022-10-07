@@ -14,7 +14,7 @@ const Cart = () => {
     setProducts(loadCart());
   }, [reload]);
 
-  const loadAllProducts = products => {
+  const loadAllProducts = (products) => {
     return (
       <div>
         <h2>This section is to load products</h2>

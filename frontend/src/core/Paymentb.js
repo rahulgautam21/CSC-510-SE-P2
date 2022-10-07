@@ -7,20 +7,20 @@ import { isAuthenticated } from "../auth/helper";
 
 import DropIn from "braintree-web-drop-in-react";
 
-const Paymentb = ({ products, setReload = f => f, reload = undefined }) => {
+const Paymentb = ({ products, setReload = (f) => f, reload = undefined }) => {
   const [info, setInfo] = useState({
     loading: false,
     success: false,
     clientToken: null,
     error: "",
-    instance: {}
+    instance: {},
   });
 
   const userId = isAuthenticated() && isAuthenticated().user._id;
   const token = isAuthenticated() && isAuthenticated().token;
 
   const getToken = (userId, token) => {
-    getmeToken(userId, token).then(info => {
+    getmeToken(userId, token).then((info) => {
       // console.log("INFORMATION", info);
       if (info.error) {
         setInfo({ ...info, error: info.error });
@@ -38,7 +38,7 @@ const Paymentb = ({ products, setReload = f => f, reload = undefined }) => {
           <div>
             <DropIn
               options={{ authorization: info.clientToken }}
-              onInstance={instance => (info.instance = instance)}
+              onInstance={(instance) => (info.instance = instance)}
             />
             <button className="btn btn-block btn-success" onClick={onPurchase}>
               Buy
@@ -58,20 +58,20 @@ const Paymentb = ({ products, setReload = f => f, reload = undefined }) => {
   const onPurchase = () => {
     setInfo({ loading: true });
     let nonce;
-    let getNonce = info.instance.requestPaymentMethod().then(data => {
+    let getNonce = info.instance.requestPaymentMethod().then((data) => {
       nonce = data.nonce;
       const paymentData = {
         paymentMethodNonce: nonce,
-        amount: getAmount()
+        amount: getAmount(),
       };
       processPayment(userId, token, paymentData)
-        .then(response => {
+        .then((response) => {
           setInfo({ ...info, success: response.success, loading: false });
           console.log("PAYMENT SUCCESS");
           const orderData = {
             products: products,
             transaction_id: response.transaction.id,
-            amount: response.transaction.amount
+            amount: response.transaction.amount,
           };
           createOrder(userId, token, orderData);
           cartEmpty(() => {
@@ -80,7 +80,7 @@ const Paymentb = ({ products, setReload = f => f, reload = undefined }) => {
 
           setReload(!reload);
         })
-        .catch(error => {
+        .catch((error) => {
           setInfo({ loading: false, success: false });
           console.log("PAYMENT FAILED");
         });
@@ -89,7 +89,7 @@ const Paymentb = ({ products, setReload = f => f, reload = undefined }) => {
 
   const getAmount = () => {
     let amount = 0;
-    products.map(p => {
+    products.map((p) => {
       amount = amount + p.price;
     });
     return amount;
