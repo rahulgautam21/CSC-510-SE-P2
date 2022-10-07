@@ -1,26 +1,26 @@
-var braintree = require("braintree");
+const braintree = require('braintree')
 
-var gateway = braintree.connect({
+const gateway = braintree.connect({
   environment: braintree.Environment.Sandbox,
-  merchantId: "5tzrj9ycb82t885q",
-  publicKey: "66qsy6z2d62p89vv",
-  privateKey: "402fb701e40619e6d2fbe763f29f758a"
-});
+  merchantId: '5tzrj9ycb82t885q',
+  publicKey: '66qsy6z2d62p89vv',
+  privateKey: '402fb701e40619e6d2fbe763f29f758a'
+})
 
 exports.getToken = (req, res) => {
-  gateway.clientToken.generate({}, function(err, response) {
+  gateway.clientToken.generate({}, function (err, response) {
     if (err) {
-      res.status(500).send(err);
+      res.status(500).send(err)
     } else {
-      res.send(response);
+      res.send(response)
     }
-  });
-};
+  })
+}
 
 exports.processPayment = (req, res) => {
-  let nonceFromTheClient = req.body.paymentMethodNonce;
+  const nonceFromTheClient = req.body.paymentMethodNonce
 
-  let amountFromTheClient = req.body.amount;
+  const amountFromTheClient = req.body.amount
   gateway.transaction.sale(
     {
       amount: amountFromTheClient,
@@ -30,12 +30,12 @@ exports.processPayment = (req, res) => {
         submitForSettlement: true
       }
     },
-    function(err, result) {
+    function (err, result) {
       if (err) {
-        res.status(500).json(error);
+        res.status(500).json(error)
       } else {
-        res.json(result);
+        res.json(result)
       }
     }
-  );
-};
+  )
+}
