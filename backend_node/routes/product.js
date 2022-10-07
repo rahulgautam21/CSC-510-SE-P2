@@ -14,6 +14,7 @@ const {
 const { isSignedIn, isAuthenticated, isAdmin } = require("../controllers/auth");
 const { getUserById } = require("../controllers/user");
 
+// get parameters
 router.param("userId", getUserById);
 router.param("productId", getProductById);
 
@@ -50,7 +51,6 @@ router.put(
 
 // listing route
 router.get("/products", getAllProducts);
-
 router.get("/products/categories", getAllUniqueCategories);
 
 module.exports = router;

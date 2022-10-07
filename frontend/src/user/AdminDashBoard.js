@@ -3,6 +3,7 @@ import Base from '../core/Base'
 import { isAuthenticated } from '../auth/helper/index'
 import { Link } from 'react-router-dom'
 
+//Display admin dashboard and its details 
 const AdminDashBoard = () => {
   const {
     user: { name, email, role }

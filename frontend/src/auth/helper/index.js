@@ -1,5 +1,6 @@
 import { API } from '../../backend'
 
+//This is used to fetch signup, signin and signout routes
 export const signup = (user) => {
   return fetch(`${API}/signup`, {
     method: 'POST',

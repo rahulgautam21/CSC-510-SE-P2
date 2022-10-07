@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Base from '../core/Base'
 import { Redirect } from 'react-router-dom'
-
 import { signin, authenticate, isAuthenticated } from '../auth/helper'
 
+//This is used to display sign in page 
 const Signin = () => {
   const [values, setValues] = useState({
     email: '',

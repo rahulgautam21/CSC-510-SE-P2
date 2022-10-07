@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
 import { isAuthenticated } from './index'
 
+//This is used to fetch admin route
 const AdminRoute = ({ component: Component, ...rest }) => {
   return (
     <Route

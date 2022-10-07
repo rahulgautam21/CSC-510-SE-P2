@@ -3,6 +3,7 @@ const { check, validationResult } = require("express-validator");
 const jwt = require("jsonwebtoken");
 const expressJwt = require("express-jwt");
 
+//Adding user to database after signing up
 exports.signup = (req, res) => {
   const errors = validationResult(req);
 
@@ -14,11 +15,13 @@ exports.signup = (req, res) => {
 
   const user = new User(req.body);
   user.save((err, user) => {
+    //throw bad request error message
     if (err) {
       return res.status(400).json({
         err: "NOT able to save user in DB",
       });
     }
+    //else save details to database
     res.json({
       name: user.name,
       email: user.email,
@@ -27,6 +30,7 @@ exports.signup = (req, res) => {
   });
 };
 
+//Validating user before sign in 
 exports.signin = (req, res) => {
   const errors = validationResult(req);
   const { email, password } = req.body;
@@ -36,7 +40,7 @@ exports.signin = (req, res) => {
       error: errors.array()[0].msg,
     });
   }
-
+  
   User.findOne({ email }, (err, user) => {
     if (err || !user) {
       return res.status(400).json({
@@ -61,6 +65,7 @@ exports.signin = (req, res) => {
   });
 };
 
+//Clear cookies after successful sign out
 exports.signout = (req, res) => {
   res.clearCookie("token");
   res.json({
@@ -68,13 +73,14 @@ exports.signout = (req, res) => {
   });
 };
 
-// //protected routes
+//protected routes
 exports.isSignedIn = expressJwt({
   secret: process.env.SECRET,
   userProperty: "auth",
 });
 
 // custom middlewares
+// Check user authentication to accept or deny access
 exports.isAuthenticated = (req, res, next) => {
   const checker = req.profile && req.auth && req.profile._id == req.auth._id;
   if (!checker) {
@@ -85,6 +91,7 @@ exports.isAuthenticated = (req, res, next) => {
   next();
 };
 
+//To check if user is admin
 exports.isAdmin = (req, res, next) => {
   if (req.profile.role === 0) {
     return res.status(403).json({
