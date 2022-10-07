@@ -8,6 +8,7 @@ import {
 } from "./helper/adminapicall";
 import { isAuthenticated } from "../auth/helper/index";
 
+//Update product details and write to DB
 const UpdateProduct = ({ match }) => {
   const { user, token } = isAuthenticated();
 

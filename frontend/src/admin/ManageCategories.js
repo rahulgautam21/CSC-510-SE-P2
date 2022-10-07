@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { isAuthenticated } from "../auth/helper";
 import { getCategories } from "./helper/adminapicall";
 
+//Update category details and write to DB
 const ManageCategories = () => {
   const [categories, setCategories] = useState([]);
 
