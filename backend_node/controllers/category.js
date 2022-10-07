@@ -1,5 +1,6 @@
 const Category = require("../models/category");
 
+//Fetch details of a category specified by its ID
 exports.getCategoryById = (req, res, next, id) => {
   Category.findById(id).exec((err, category) => {
     if (err) {
@@ -12,6 +13,7 @@ exports.getCategoryById = (req, res, next, id) => {
   });
 };
 
+//Create a new category and write to DB
 exports.createCategory = (req, res) => {
   const category = new Category(req.body);
   category.save((err, category) => {
@@ -24,10 +26,12 @@ exports.createCategory = (req, res) => {
   });
 };
 
+//Get details of a particular category
 exports.getCategory = (req, res) => {
   return res.json(req.category);
 };
 
+//Fetch all categories that exists
 exports.getAllCategory = (req, res) => {
   Category.find().exec((err, categories) => {
     if (err) {
@@ -39,6 +43,7 @@ exports.getAllCategory = (req, res) => {
   });
 };
 
+//Update details of existing category
 exports.updateCategory = (req, res) => {
   const category = req.category;
   category.name = req.body.name;
@@ -53,6 +58,7 @@ exports.updateCategory = (req, res) => {
   });
 };
 
+//Delete a category from the application
 exports.removeCategory = (req, res) => {
   const category = req.category;
 

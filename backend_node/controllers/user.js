@@ -1,6 +1,7 @@
 const User = require("../models/user");
 const Order = require("../models/order");
 
+//Fetch details of a user specified by its ID
 exports.getUserById = (req, res, next, id) => {
   User.findById(id).exec((err, user) => {
     if (err || !user) {
@@ -19,6 +20,7 @@ exports.getUser = (req, res) => {
   return res.json(req.profile);
 };
 
+//Update details of a user
 exports.updateUser = (req, res) => {
   User.findByIdAndUpdate(
     { _id: req.profile._id },
@@ -37,6 +39,7 @@ exports.updateUser = (req, res) => {
   );
 };
 
+//Fetch all orders of the user
 exports.userPurchaseList = (req, res) => {
   Order.find({ user: req.profile._id })
     .populate("user", "_id name")
@@ -50,6 +53,7 @@ exports.userPurchaseList = (req, res) => {
     });
 };
 
+//Add details of purchased item in the orders of the user
 exports.pushOrderInPurchaseList = (req, res, next) => {
   const purchases = [];
   req.body.order.products.forEach((product) => {
@@ -63,8 +67,7 @@ exports.pushOrderInPurchaseList = (req, res, next) => {
       transaction_id: req.body.order.transaction_id,
     });
   });
-
-  // store thi in DB
+  //Write to the DB
   User.findOneAndUpdate(
     { _id: req.profile._id },
     { $push: { purchases } },
