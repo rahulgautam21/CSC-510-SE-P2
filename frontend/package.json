@@ -38,8 +38,20 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.28.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-react": "^7.31.8"
-  }
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "prettier": "2.7.1"
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "extends": [
+    "plugin:prettier/recommended"
+  ]
 }
