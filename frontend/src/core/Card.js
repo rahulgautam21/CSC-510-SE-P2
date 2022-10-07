@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import ImageHelper from "./helper/ImageHelper";
-import { Redirect } from "react-router-dom";
-import { addItemToCart, removeItemFromCart } from "./helper/cartHelper";
+import React, {useState, useEffect} from 'react';
+import ImageHelper from './helper/ImageHelper';
+import {Redirect} from 'react-router-dom';
+import {addItemToCart, removeItemFromCart} from './helper/cartHelper';
 
 const Card = ({
   product,
@@ -14,9 +14,9 @@ const Card = ({
   const [redirect, setRedirect] = useState(false);
   const [count, setCount] = useState(product.count);
 
-  const cartTitle = product ? product.name : "A photo from pexels";
-  const cartDescrption = product ? product.description : "Default description";
-  const cartPrice = product ? product.price : "DEFAULT";
+  const cartTitle = product ? product.name : 'A photo from pexels';
+  const cartDescrption = product ? product.description : 'Default description';
+  const cartPrice = product ? product.price : 'DEFAULT';
 
   const addToCart = () => {
     addItemToCart(product, () => setRedirect(true));
