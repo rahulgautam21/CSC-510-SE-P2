@@ -9,11 +9,24 @@ const {
 } = require("../controllers/user");
 const { isSignedIn, isAuthenticated, isAdmin } = require("../controllers/auth");
 
+// get parameters
 router.param("userId", getUserById);
 
-router.get("/user/:userId", isSignedIn, isAuthenticated, getUser);
-router.put("/user/:userId", isSignedIn, isAuthenticated, updateUser);
+// read route
+router.get(
+  "/user/:userId", 
+  isSignedIn, 
+  isAuthenticated, 
+  getUser);
 
+// update route
+router.put(
+  "/user/:userId", 
+  isSignedIn, 
+  isAuthenticated, 
+  updateUser);
+  
+// get orders route
 router.get(
   "/orders/user/:userId",
   isSignedIn,

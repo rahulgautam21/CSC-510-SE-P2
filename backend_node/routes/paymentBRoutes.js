@@ -6,6 +6,7 @@ const { getUserById } = require("../controllers/user");
 const { getToken, processPayment } = require("../controllers/paymentb");
 router.get("/payment/gettoken/:userId", isSignedIn, isAuthenticated, getToken);
 
+// process payment route
 router.post(
   "/payment/braintree/:userId",
   isSignedIn,
