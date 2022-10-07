@@ -87,7 +87,6 @@ describe("Authentication Routes", () => {
           password: "Test123456",
         })
         .set("Content-Type", "application/json");
-
       expect(res).to.have.status(200);
     });
 
