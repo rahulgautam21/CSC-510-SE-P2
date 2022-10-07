@@ -13,6 +13,7 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "prettier"],
+  parser: "babel-eslint",
   rules: {
     "prettier/prettier": "error",
     "no-unused-vars":"off",
