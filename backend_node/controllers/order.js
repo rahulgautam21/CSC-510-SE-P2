@@ -1,6 +1,6 @@
 const { Order, ProductCart } = require("../models/order");
 
-//Fetch details of an order specified by its ID
+// Fetch details of an order specified by its ID
 exports.getOrderById = (req, res, next, id) => {
   Order.findById(id)
     .populate("products.product", "name price")
@@ -15,7 +15,7 @@ exports.getOrderById = (req, res, next, id) => {
     });
 };
 
-//Create a new order and write to DB
+// Create a new order and write to DB
 exports.createOrder = (req, res) => {
   req.body.order.user = req.profile;
   const order = new Order(req.body.order);
@@ -29,7 +29,7 @@ exports.createOrder = (req, res) => {
   });
 };
 
-//Fetch all orders of a user
+// Fetch all orders of a user
 exports.getAllOrders = (req, res) => {
   Order.find()
     .populate("user", "_id name")
@@ -43,12 +43,12 @@ exports.getAllOrders = (req, res) => {
     });
 };
 
-//Get order status 
+// Get order status
 exports.getOrderStatus = (req, res) => {
   res.json(Order.schema.path("status").enumValues);
 };
 
-//Update order status, fetched by order id
+// Update order status, fetched by order id
 exports.updateStatus = (req, res) => {
   Order.updateOne(
     { _id: req.body.orderId },

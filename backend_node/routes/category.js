@@ -12,7 +12,7 @@ const {
 const { isSignedIn, isAdmin, isAuthenticated } = require("../controllers/auth");
 const { getUserById } = require("../controllers/user");
 
-//Get parameters
+// Get parameters
 router.param("userId", getUserById);
 router.param("categoryId", getCategoryById);
 

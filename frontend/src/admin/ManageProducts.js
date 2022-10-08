@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import Base from "../core/Base";
-import { Link } from "react-router-dom";
-import { isAuthenticated } from "../auth/helper";
-import { getProducts, deleteProduct } from "./helper/adminapicall";
+import React, {useState, useEffect} from 'react';
+import Base from '../core/Base';
+import {Link} from 'react-router-dom';
+import {isAuthenticated} from '../auth/helper';
+import {getProducts, deleteProduct} from './helper/adminapicall';
 
-//Delete product from the application
+// Delete product from the application
 const ManageProducts = () => {
   const [products, setProducts] = useState([]);
 
-  const { user, token } = isAuthenticated();
+  const {user, token} = isAuthenticated();
 
   const preload = () => {
     getProducts().then((data) => {
