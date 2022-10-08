@@ -1,0 +1,28 @@
+{
+    "_id" : ObjectId("6340ef71f51b7f2ff77aa597"),
+    "role" : NumberInt(0),
+    "purchases" : [
+
+    ],
+    "name" : "Saswat",
+    "email" : "saswat@gmail.com",
+    "salt" : "ebb4c460-46b9-11ed-b45d-450576b29487",
+    "encry_password" : "5924b38f2a74104cd27cb2a2d5623e52cef236cc9f30295452ce373db7a7a252",
+    "createdAt" : ISODate("2022-10-08T03:33:05.578+0000"),
+    "updatedAt" : ISODate("2022-10-08T03:33:05.578+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("6340ef9df51b7f2ff77aa59b"),
+    "role" : NumberInt(1),
+    "purchases" : [
+
+    ],
+    "name" : "Admin",
+    "email" : "admin@test.com",
+    "salt" : "059b0420-46ba-11ed-b45d-450576b29487",
+    "encry_password" : "faa67b0005790bf50084314e4a835fa6f20aa492852c66408adaa193b0461148",
+    "createdAt" : ISODate("2022-10-08T03:33:49.029+0000"),
+    "updatedAt" : ISODate("2022-10-08T03:33:49.029+0000"),
+    "__v" : NumberInt(0)
+}
