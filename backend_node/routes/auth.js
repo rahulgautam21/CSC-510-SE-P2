@@ -3,7 +3,26 @@ const router = express.Router();
 const { check, validationResult } = require("express-validator");
 const { signout, signup, signin, isSignedIn } = require("../controllers/auth");
 
-//Restrictions for sign up
+/**
+ * @swagger
+ * /api/signup:
+ *  post:
+ *    description: Signup API
+ *    responses:
+ *      '200':
+ *        description: A successful response
+ *      '400':
+ *        description: NOT able to save user in DB
+ *      '422':
+ *        description: Unprocessable Entity
+ *    parameters:
+ *      - name: requestBody
+ *        in: body
+ *        required: true
+ *        type: object
+ *        value: '{"name": "testname", "email":"test@test.com", "password":"testpassword"}'
+ */
+
 router.post(
   "/signup",
   [
@@ -16,7 +35,25 @@ router.post(
   signup
 );
 
-//Restrictions for sign in
+/**
+ * @swagger
+ * /api/signin:
+ *  post:
+ *    description: SignIn API
+ *    responses:
+ *      '200':
+ *        description: A successful response
+ *      '400':
+ *        description: NOT able to save user in DB
+ *      '422':
+ *        description: Unprocessable Entity
+ *    parameters:
+ *      - name: requestBody
+ *        in: body
+ *        required: true
+ *        type: object
+ *        value: '{"email":"devi@gmail.com", "password":"pass"}'
+ */
 router.post(
   "/signin",
   [
@@ -26,6 +63,19 @@ router.post(
   signin
 );
 
+/**
+ * @swagger
+ * /api/signout:
+ *  get:
+ *    description: SignOut API
+ *    responses:
+ *      '200':
+ *        description: A successful response
+ *      '400':
+ *        description: NOT able to save user in DB
+ *      '422':
+ *        description: Unprocessable Entity
+ */
 router.get("/signout", signout);
 
 module.exports = router;

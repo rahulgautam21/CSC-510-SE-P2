@@ -16,7 +16,33 @@ const { getUserById } = require("../controllers/user");
 router.param("userId", getUserById);
 router.param("categoryId", getCategoryById);
 
-//To create a category
+/**
+ * @swagger
+ * /api/category/create/{userId}:
+ *  post:
+ *    description: To create a category
+ *    responses:
+ *      '200':
+ *        description: A successful response
+ *      '400':
+ *        description: NOT able to save category in DB
+ *      '401':
+ *        description: Unauthorized
+ *    parameters:
+ *      - name: userId
+ *        in: path
+ *        required: true
+ *        type: string
+ *      - name: requestBody
+ *        in: body
+ *        required: true
+ *        type: object
+ *        value: '{"name":"testCategory"}'
+ *      - name: Authorization
+ *        in: header
+ *        required: true
+ *        type: string
+ */
 router.post(
   "/category/create/:userId",
   isSignedIn,
@@ -25,12 +51,9 @@ router.post(
   createCategory
 );
 
-//Fetch existing categories
-router.get("/category/:categoryId", getCategory);
-
 /**
  * @swagger
- * /categories:
+ * /api/categories:
  *  get:
  *    description: Fetch all existing categories
  *    responses:
@@ -41,7 +64,53 @@ router.get("/category/:categoryId", getCategory);
  */
 router.get("/categories", getAllCategory);
 
-//To update a category
+/**
+ * @swagger
+ * /api/category/{categoryId}:
+ *  get:
+ *    description: Fetch an existing category
+ *    responses:
+ *      '200':
+ *        description: A successful response
+ *    parameters:
+ *      - name: categoryId
+ *        in: path
+ *        required: true
+ *        type: string
+ */
+router.get("/category/:categoryId", getCategory);
+
+/**
+ * @swagger
+ * /api/category/{categoryId}/{userId}:
+ *  put:
+ *    description: To update a category
+ *    responses:
+ *      '200':
+ *        description: A successful response
+ *      '400':
+ *        description: Failed to update category
+ *      '401':
+ *        description: Unauthorized
+ *    parameters:
+ *      - name: categoryId
+ *        in: path
+ *        required: true
+ *        type: string
+ *      - name: userId
+ *        in: path
+ *        required: true
+ *        type: string
+ *      - name: requestBody
+ *        in: body
+ *        required: true
+ *        type: object
+ *        value: '{"name":"testCategory"}'
+ *      - name: Authorization
+ *        in: header
+ *        required: true
+ *        type: string
+ */
 router.put(
   "/category/:categoryId/:userId",
   isSignedIn,
@@ -50,7 +119,32 @@ router.put(
   updateCategory
 );
 
-//To delete a category
+/**
+ * @swagger
+ * /api/category/{categoryId}/{userId}:
+ *  delete:
+ *    description: To delete a category
+ *    responses:
+ *      '200':
+ *        description: Successfully deleted
+ *      '400':
+ *        description: Failed to delete this category
+ *      '401':
+ *        description: Unauthorized
+ *    parameters:
+ *      - name: categoryId
+ *        in: path
+ *        required: true
+ *        type: string
+ *      - name: userId
+ *        in: path
+ *        required: true
+ *        type: string
+ *      - name: Authorization
+ *        in: header
+ *        required: true
+ *        type: string
+ */
 router.delete(
   "/category/:categoryId/:userId",
   isSignedIn,

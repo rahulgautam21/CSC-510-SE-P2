@@ -22,15 +22,22 @@ const swaggerOptions = {
   swaggerDefinition: {
     info: {
       version: "1.0.0",
-      title: "Customer API",
-      description: "Customer API Information",
+      title: "SE Project",
+      jsonEditor: true,
+      description: "Walpaper Store API Information",
       contact: {
-        name: "Amazing Developer"
+        name: "Group 17",
       },
-      servers: ["http://localhost:5000"]
-    }
+      servers: ["http://localhost:5000"],
+    },
   },
-  apis: ["app.js", "category.js"]
+  apis: [
+    "app.js",
+    "./routes/auth.js",
+    "./routes/user.js",
+    "./routes/product.js",
+    "./routes/category.js",
+  ],
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
