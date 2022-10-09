@@ -6,6 +6,7 @@
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Sneha1b/CSC-510-SE/blob/main/README.md)
 [![GitHub issues](https://img.shields.io/github/issues/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/issues?q=is%3Aopen)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/issues?q=is%3Aclosed)
 [![Github pull requests](https://img.shields.io/github/issues-pr/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/pulls)
 [![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/pulls?q=is%3Apr+is%3Aclosed)
 [![Github Repo size in bytes](https://img.shields.io/github/languages/code-size/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE)
