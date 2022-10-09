@@ -12,15 +12,40 @@
 [![Github Repo size in bytes](https://img.shields.io/github/languages/code-size/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE)
 [![codecov.io Code Line Coverage](https://img.shields.io/badge/code%20coverage-63%25-green)](https://htmlpreview.github.io/?https://github.com/Sneha1b/CSC-510-SE/blob/main/backend_node/Test%20Results%20-%20Backend_Test.html)
 
-# Description
+# Project Description
+In today's customer centric economy, products tweaked to the customer needs and desires have the highest market value. The recent boom in social media advertisement, has led to huge increase in demand for customized merchandise from small/local businesses. And most of the times these local businesses cannot get registered to world wide e-commerce sites due to local supply of the product.
+
+We design a custom e-commerce site that can be run by any local business owner free of cost to sell the merchandise at a large scale. One can add any kind of product on the site be it tshirts, customized planners, wallpapers (How about some fresh organic produce!). All you need to do is setup the project and use it to increase your product reach!
+
+# Technical Description
 The project was taken up as a part of the course work for CSC 510 Software Engineering during Masters. The project aims at creating a microservice, build it ground up and understand various aspects of software development in the industry.
 
-We designed a one-stop marketplace that helps the customers buy wallpapers. New users can use the sign-up functinality to create an account.
+We designed a one-stop marketplace that helps the customers buy customized merchandise. New users can use the sign-up functinality to create an account.
  
 There are 2 allowed roles in the system :  
-- Admin - Has capability of performing CRUD operations on wallpapers. This allows him to add/remove different wallpapers as well as classify them into categories.
+- Admin - Has capability of performing CRUD operations on merchandise. This allows him to add/remove different merchandise as well as classify them into categories.
 
-- Buyer/User - Has the capability of selecting a wallpaper and proceeding to checkout by adding it to cart.
+- Buyer/User - Has the capability of selecting a merchandise and proceeding to checkout by adding it to cart.
+
+# Installation Steps
+- Clone the repository:
+```
+git clone https://github.com/Sneha1b/CSC-510-SE.git
+```
+- Run backend:
+```
+cd backend_node
+npm install
+npm start
+```
+- Run frontend:
+```
+cd frontend
+npm install
+npm start
+```
+- Navigate using a browser to [site](http://localhost:3000/signin) and host your very own customized e-commerce site.
+
 
 # Tech stack
 We have used the MERN stack, a free and open-source JavaScript software stack for building dynamic full-stack web applications. This involves using:  
