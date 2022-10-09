@@ -32,6 +32,15 @@ We have used the MERN stack, a free and open-source JavaScript software stack fo
 
 - NodeJS : The JavaScript runtime environment. It is used to run JavaScript on a machine rather than in a browser.  
 
+# Software used
+- Code development: We use visual studio code. Installation steps can be found [here](https://code.visualstudio.com/)
+
+- Database: We use MongoDB community edition as the database for the project. Installation steps can be found [here](https://www.mongodb.com/docs/manual/administration/install-community/)
+
+- Testing: We use Postman to test backend APIs. Installation steps can be found [here](https://www.postman.com/downloads/)
+
+- Database View: We use Studio3T to check the data stored in the database. Installation steps can be found [here](https://studio3t.com/download/)
+
 # Group members
 * Chirrag Nangia
 * Saswat Priyadarshan
