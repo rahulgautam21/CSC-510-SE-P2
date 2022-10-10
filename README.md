@@ -20,6 +20,9 @@ We design a custom e-commerce site that can be run by any local business owner f
 # Demo
 [Click here to check the demo video](https://drive.google.com/file/d/1RdRbiGIPSofx5wDev_UIDP-WZddjx8gi/view?usp=drivesdk)
 
+# RoadMap
+[Click here to check the roadmap](https://github.com/users/Sneha1b/projects/1/views/1)
+
 # Technical Description
 The project was taken up as a part of the course work for CSC 510 Software Engineering during Masters. The project aims at creating a microservice, build it ground up and understand various aspects of software development in the industry.
 
