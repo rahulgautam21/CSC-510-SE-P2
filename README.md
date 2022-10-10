@@ -17,6 +17,9 @@ In today's customer centric economy, products tweaked to the customer needs and 
 
 We design a custom e-commerce site that can be run by any local business owner free of cost to sell the merchandise at a large scale. One can add any kind of product on the site be it tshirts, customized planners, wallpapers (How about some fresh organic produce!). All you need to do is setup the project and use it to increase your product reach!
 
+# Demo
+[Click here to check the demo video](https://drive.google.com/file/d/1RdRbiGIPSofx5wDev_UIDP-WZddjx8gi/view?usp=drivesdk)
+
 # Technical Description
 The project was taken up as a part of the course work for CSC 510 Software Engineering during Masters. The project aims at creating a microservice, build it ground up and understand various aspects of software development in the industry.
 

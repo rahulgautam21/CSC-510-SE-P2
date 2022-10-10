@@ -2,7 +2,7 @@
 
 |Notes|Self Assessment (Total:)|Evidence|
 |-----|---------------|--------|
-|Video|3|https://github.com/ekanshsinghal/se-group26-proj1#readme| 
+|Video|3|https://drive.google.com/file/d/1RdRbiGIPSofx5wDev_UIDP-WZddjx8gi/view?usp=drivesdk| 
 |Workload is spread over the whole team (one team member is often Xtimes more productive than the others... but nevertheless, here is a track record that everyone is contributing a lot)|3|https://github.com/Sneha1b/CSC-510-SE/graphs/contributors|
 |Number of commits|3|https://github.com/Sneha1b/CSC-510-SE/pulse|
 |Number of commits: by different people|3|https://github.com/Sneha1b/CSC-510-SE/pulse|
