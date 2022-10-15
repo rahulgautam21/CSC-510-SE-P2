@@ -17,6 +17,9 @@ In today's customer centric economy, products tweaked to the customer needs and 
 
 We design a custom e-commerce site that can be run by any local business owner free of cost to sell the merchandise at a large scale. One can add any kind of product on the site be it tshirts, customized planners, wallpapers (How about some fresh organic produce!). All you need to do is setup the project and use it to increase your product reach!
 
+<img align=center src="https://github.com/Sneha1b/CSC-510-SE/blob/main/backend_node/misc/poster.png" width="900">
+
+
 # Demo
 [Click here to check the demo video](https://drive.google.com/file/d/1RdRbiGIPSofx5wDev_UIDP-WZddjx8gi/view?usp=drivesdk)
 
