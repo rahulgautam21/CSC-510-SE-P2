@@ -1,4 +1,6 @@
 const Category = require("../models/category");
+const formidable = require("formidable");
+const _ = require("lodash");
 
 // Fetch details of a category specified by its ID
 exports.getCategoryById = (req, res, next, id) => {
@@ -45,16 +47,28 @@ exports.getAllCategory = (req, res) => {
 
 // Update details of existing category
 exports.updateCategory = (req, res) => {
-  const category = req.category;
-  category.name = req.body.name;
+  const form = new formidable.IncomingForm();
+  form.keepExtensions = true;
 
-  category.save((err, updatedCategory) => {
+  form.parse(req, (err, fields, file) => {
     if (err) {
       return res.status(400).json({
-        error: "Failed to update category",
+        error: "problem with image",
       });
     }
-    res.json(updatedCategory);
+
+    let category = req.category;
+    category = _.extend(category, fields);
+
+    // Write update to the DB
+    category.save((err, category) => {
+      if (err) {
+        res.status(400).json({
+          error: "Updation of category failed",
+        });
+      }
+      res.json(category);
+    });
   });
 };
 
