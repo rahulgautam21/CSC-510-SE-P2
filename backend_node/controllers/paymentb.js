@@ -2,9 +2,9 @@ const braintree = require("braintree");
 
 const gateway = braintree.connect({
   environment: braintree.Environment.Sandbox,
-  merchantId: "5tzrj9ycb82t885q",
-  publicKey: "66qsy6z2d62p89vv",
-  privateKey: "402fb701e40619e6d2fbe763f29f758a",
+  merchantId: "spb93pmq25dnh8mj",
+  publicKey: "2pgpbkmz497z759p",
+  privateKey: "69aa3ae1271916dfbfc44f2a2b84cbd3",
 });
 
 // Generate a gateway token for payment
