@@ -38,7 +38,24 @@ const Paymentb = ({ products, setReload = (f) => f, reload = undefined }) => {
         {info.clientToken !== null && products.length > 0 ? (
           <div>
             <DropIn
-              options={{ authorization: info.clientToken }}
+              options={{
+                authorization: info.clientToken,
+                paypal: {
+                  flow: "vault"
+                },
+                venmo: {
+                  allowNewBrowserTab: false,
+                },
+                googlePay: {
+                  googlePayVersion: 2,
+                  merchantId: 'merchant-id-from-google',
+                  transactionInfo: {
+                    totalPriceStatus: 'FINAL',
+                    totalPrice: getAmount().toString(),
+                    currencyCode: 'USD'
+                  },
+                }
+              }}
               onInstance={(instance) => (info.instance = instance)}
             />
             <button className="btn btn-block btn-danger" onClick={onPurchase}>
