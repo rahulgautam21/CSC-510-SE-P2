@@ -19,6 +19,8 @@ We design a custom e-commerce site that can be run by any local business owner f
 
 <img align=center src="https://github.com/Sneha1b/CSC-510-SE/blob/main/backend_node/misc/poster.png" width="900">
 
+The project is hosted on AWS ec2, completely scalable by adding more instances when the customer growth increases by adding more instances and adding a load balancer. The basic version of the app is available [here](http://54.190.102.173)
+
 
 # Demo
 [Click here to check the demo video](https://drive.google.com/file/d/1RdRbiGIPSofx5wDev_UIDP-WZddjx8gi/view?usp=drivesdk)
@@ -40,6 +42,11 @@ There are 2 allowed roles in the system :
 - Clone the repository:
 ```
 git clone https://github.com/Sneha1b/CSC-510-SE.git
+```
+- Install node n mongo in the system:
+```
+https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/
+https://www.guru99.com/download-install-node-js.html
 ```
 - Run backend:
 ```
