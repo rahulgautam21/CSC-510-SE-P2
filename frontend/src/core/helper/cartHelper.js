@@ -37,11 +37,22 @@ export const loadCart = () => {
   }
 };
 
+export const findItemInCart = (id) => {
+  if (typeof window !== undefined) {
+    let products = loadCart();
+    for (let index in products) {
+      if (products[index]['_id'] === id) {
+        return products[index]
+      }
+    }
+  }
+};
+
 export const removeItemFromCart = (productId) => {
   let cart = [];
   if (typeof window !== undefined) {
     if (localStorage.getItem('cart')) {
-      cart = JSON.parse(localStorage.getItem('cart'));
+      cart = loadCart();
     }
     cart.map((product, i) => {
       if (product._id === productId) {

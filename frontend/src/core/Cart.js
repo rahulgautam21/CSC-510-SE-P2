@@ -23,6 +23,7 @@ const Cart = () => {
             key={index}
             product={product}
             removeFromCart
+            showStock={false}
             addtoCart={false}
             setReload={setReload}
             reload={reload}
