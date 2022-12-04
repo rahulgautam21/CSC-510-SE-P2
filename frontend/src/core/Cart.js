@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles.css';
-import {API} from '../backend';
+import { API } from '../backend';
 import Base from './Base';
 import Card from './Card';
-import {loadCart} from './helper/cartHelper';
+import { loadCart } from './helper/cartHelper';
 import Paymentb from './Paymentb';
 
 const Cart = () => {
@@ -17,7 +17,7 @@ const Cart = () => {
   const loadAllProducts = (products) => {
     return (
       <div>
-        <h2>This section is to load products</h2>
+        <h2>Cart: </h2>
         {products.map((product, index) => (
           <Card
             key={index}
@@ -45,11 +45,11 @@ const Cart = () => {
         <div className='col-6'>
           {products.length > 0 ?
             (
-                loadAllProducts(products)
-              ) :
+              loadAllProducts(products)
+            ) :
             (
               <h4>No products</h4>
-              )}
+            )}
         </div>
         <div className='col-6'>
           <Paymentb products={products} setReload={setReload} />

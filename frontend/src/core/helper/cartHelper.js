@@ -16,7 +16,23 @@ export const addItemToCart = (item, next) => {
 export const loadCart = () => {
   if (typeof window !== undefined) {
     if (localStorage.getItem('cart')) {
-      return JSON.parse(localStorage.getItem('cart'));
+      let products = JSON.parse(localStorage.getItem('cart'));
+      let newProducts = []
+      for (let product of products) {
+        let found = false
+        for (let index in newProducts) {
+          if (newProducts[index]['_id'] === product['_id']) {
+            newProducts[index]['quantity'] = newProducts[index]['quantity'] + 1;
+            found = true;
+          }
+        }
+        if (!found) {
+          let item = product;
+          item['quantity'] = 1
+          newProducts.push(item)
+        }
+      }
+      return newProducts;
     }
   }
 };

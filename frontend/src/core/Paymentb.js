@@ -22,7 +22,6 @@ const Paymentb = ({ products, setReload = (f) => f, reload = undefined }) => {
   const getToken = (userId, token) => {
     getmeToken(userId, token).then((info) => {
       // console.log("INFORMATION", info);
-      console.log(info)
       if (info.error) {
         setInfo({ ...info, error: info.error });
       } else {
@@ -108,7 +107,7 @@ const Paymentb = ({ products, setReload = (f) => f, reload = undefined }) => {
   const getAmount = () => {
     let amount = 0;
     products.map((p) => {
-      amount = amount + p.price;
+      amount = amount + (p.price * p.quantity);
     });
     return amount;
   };
