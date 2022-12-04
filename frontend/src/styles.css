@@ -14,3 +14,11 @@ footer {
   left: 0px;
   right: 0px;
 }
+
+tr {
+  padding: 15px;
+}
+
+th {
+  padding: 15px;
+}

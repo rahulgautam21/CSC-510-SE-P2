@@ -1,12 +1,12 @@
 import React from 'react';
 import Base from '../core/Base';
-import {isAuthenticated} from '../auth/helper/index';
-import {Link} from 'react-router-dom';
+import { isAuthenticated } from '../auth/helper/index';
+import { Link } from 'react-router-dom';
 
 // Display admin dashboard and its details
 const AdminDashBoard = () => {
   const {
-    user: {name, email, role},
+    user: { name, email, role },
   } = isAuthenticated();
 
   const adminLeftSide = () => {
@@ -36,7 +36,7 @@ const AdminDashBoard = () => {
           </li>
           <li className="list-group-item">
             <Link to="/admin/orders" className="nav-link text-danger">
-              Manage Orders
+              View all Orders
             </Link>
           </li>
         </ul>

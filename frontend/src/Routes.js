@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './core/Home';
 import Signup from './user/Signup';
 import Signin from './user/Signin';
@@ -14,6 +14,7 @@ import ManageProducts from './admin/ManageProducts';
 import UpdateProduct from './admin/UpdateProduct';
 import Cart from './core/Cart';
 import UpdateCategory from 'admin/UpdateCategory';
+import Orders from 'admin/Orders';
 
 const Routes = () => {
   return (
@@ -47,6 +48,11 @@ const Routes = () => {
           path='/admin/category/update/:categoryId'
           exact
           component={UpdateCategory}
+        />
+        <AdminRoute
+          path='/admin/orders'
+          exact
+          component={Orders}
         />
       </Switch>
     </BrowserRouter>
