@@ -6,8 +6,8 @@ const expressJwt = require("express-jwt");
 //Google auth logic
 exports.googleSignup = (req, res) => {
   const user = new User(req.body);
-  const user_email = user.email;
-  User.findOne({ 'email':user_email }, (err, founduser) => {
+  const userEmail = user.email;
+  User.findOne({ 'email': userEmail }, (err, founduser) => {
     let mainuser = founduser;
     if (err || !founduser) {
       user.save();
@@ -23,7 +23,7 @@ exports.googleSignup = (req, res) => {
     const { _id, name, email, role } = mainuser;
     return res.json({ token, user: { _id, name, email, role } });
   });
-  
+
 };
 
 // Adding user to database after signing up
