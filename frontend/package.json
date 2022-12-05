@@ -44,6 +44,8 @@
     ]
   },
   "devDependencies": {
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
     "eslint": "^6.6.0",
     "prettier": "2.7.1"
   },

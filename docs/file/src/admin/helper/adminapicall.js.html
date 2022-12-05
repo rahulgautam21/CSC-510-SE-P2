@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/admin/helper/adminapicall.js | frontend</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-API">API</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#admin-helper">admin/helper</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createCategory">createCategory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createaProduct">createaProduct</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deleteCategory">deleteCategory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deleteProduct">deleteProduct</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCategories">getCategories</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCategory">getCategory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getProduct">getProduct</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getProducts">getProducts</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateCategory">updateCategory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateProduct">updateProduct</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#auth-helper">auth/helper</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-authenticate">authenticate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-googleSignup">googleSignup</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isAuthenticated">isAuthenticated</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-signin">signin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-signout">signout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-signup">signup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-helper">core/helper</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getProducts">getProducts</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createOrder">createOrder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getAllOrders">getAllOrders</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getmeToken">getmeToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-processPayment">processPayment</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#user-helper">user/helper</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getUser">getUser</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/admin/helper/adminapicall.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { API } from &apos;../../backend&apos;;
+
+// category calls
+export const createCategory = (userId, token, category) =&gt; {
+  return fetch(`${API}/category/create/${userId}`, {
+    method: &apos;POST&apos;,
+    headers: {
+      &apos;Accept&apos;: &apos;application/json&apos;,
+      &apos;Content-Type&apos;: &apos;application/json&apos;,
+      &apos;Authorization&apos;: `Bearer ${token}`,
+    },
+    body: JSON.stringify(category),
+  })
+    .then((response) =&gt; {
+      return response.json();
+    })
+    .catch((err) =&gt; console.log(err));
+};
+
+// get all categories
+export const getCategories = () =&gt; {
+  return fetch(`${API}/categories`, {
+    method: &apos;GET&apos;,
+  })
+    .then((response) =&gt; {
+      return response.json();
+    })
+    .catch((err) =&gt; console.log(err));
+};
+
+// products calls
+
+// create a product
+export const createaProduct = (userId, token, product) =&gt; {
+  return fetch(`${API}/product/create/${userId}`, {
+    method: &apos;POST&apos;,
+    headers: {
+      Accept: &apos;application/json&apos;,
+      Authorization: `Bearer ${token}`,
+    },
+    body: product,
+  })
+    .then((response) =&gt; {
+      return response.json();
+    })
+    .catch((err) =&gt; console.log(err));
+};
+
+// get all products
+export const getProducts = () =&gt; {
+  return fetch(`${API}/products`, {
+    method: &apos;GET&apos;,
+  })
+    .then((response) =&gt; {
+      return response.json();
+    })
+    .catch((err) =&gt; console.log(err));
+};
+
+// delete a product
+
+export const deleteProduct = (productId, userId, token) =&gt; {
+  return fetch(`${API}/product/${productId}/${userId}`, {
+    method: &apos;DELETE&apos;,
+    headers: {
+      Accept: &apos;application/json&apos;,
+      Authorization: `Bearer ${token}`,
+    },
+  })
+    .then((response) =&gt; {
+      return response.json();
+    })
+    .catch((err) =&gt; console.log(err));
+};
+
+// get a product
+
+export const getProduct = (productId) =&gt; {
+  return fetch(`${API}/product/${productId}`, {
+    method: &apos;GET&apos;,
+  })
+    .then((response) =&gt; {
+      return response.json();
+    })
+    .catch((err) =&gt; console.log(err));
+};
+
+// update a product
+
+export const updateProduct = (productId, userId, token, product) =&gt; {
+  return fetch(`${API}/product/${productId}/${userId}`, {
+    method: &apos;PUT&apos;,
+    headers: {
+      Accept: &apos;application/json&apos;,
+      Authorization: `Bearer ${token}`,
+    },
+    body: product,
+  })
+    .then((response) =&gt; {
+      return response.json();
+    })
+    .catch((err) =&gt; console.log(err));
+};
+
+// delete a product
+
+export const deleteCategory = (categoryId, userId, token) =&gt; {
+  return fetch(`${API}/category/${categoryId}/${userId}`, {
+    method: &apos;DELETE&apos;,
+    headers: {
+      Accept: &apos;application/json&apos;,
+      Authorization: `Bearer ${token}`,
+    },
+  })
+    .then((response) =&gt; {
+      return response.json();
+    })
+    .catch((err) =&gt; console.log(err));
+};
+
+// get a product
+
+export const getCategory = (categoryId) =&gt; {
+  return fetch(`${API}/category/${categoryId}`, {
+    method: &apos;GET&apos;,
+  })
+    .then((response) =&gt; {
+      return response.json();
+    })
+    .catch((err) =&gt; console.log(err));
+};
+
+// update a product
+
+export const updateCategory = (categoryId, userId, token, category) =&gt; {
+  return fetch(`${API}/category/${categoryId}/${userId}`, {
+    method: &apos;PUT&apos;,
+    headers: {
+      Accept: &apos;application/json&apos;,
+      Authorization: `Bearer ${token}`,
+    },
+    body: category,
+  })
+    .then((response) =&gt; {
+      return response.json();
+    })
+    .catch((err) =&gt; console.log(err));
+};
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

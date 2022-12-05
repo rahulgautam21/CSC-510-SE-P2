@@ -1,0 +1,1439 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/admin/helper/adminapicall.js",
+    "content": "import { API } from '../../backend';\n\n// category calls\nexport const createCategory = (userId, token, category) => {\n  return fetch(`${API}/category/create/${userId}`, {\n    method: 'POST',\n    headers: {\n      'Accept': 'application/json',\n      'Content-Type': 'application/json',\n      'Authorization': `Bearer ${token}`,\n    },\n    body: JSON.stringify(category),\n  })\n    .then((response) => {\n      return response.json();\n    })\n    .catch((err) => console.log(err));\n};\n\n// get all categories\nexport const getCategories = () => {\n  return fetch(`${API}/categories`, {\n    method: 'GET',\n  })\n    .then((response) => {\n      return response.json();\n    })\n    .catch((err) => console.log(err));\n};\n\n// products calls\n\n// create a product\nexport const createaProduct = (userId, token, product) => {\n  return fetch(`${API}/product/create/${userId}`, {\n    method: 'POST',\n    headers: {\n      Accept: 'application/json',\n      Authorization: `Bearer ${token}`,\n    },\n    body: product,\n  })\n    .then((response) => {\n      return response.json();\n    })\n    .catch((err) => console.log(err));\n};\n\n// get all products\nexport const getProducts = () => {\n  return fetch(`${API}/products`, {\n    method: 'GET',\n  })\n    .then((response) => {\n      return response.json();\n    })\n    .catch((err) => console.log(err));\n};\n\n// delete a product\n\nexport const deleteProduct = (productId, userId, token) => {\n  return fetch(`${API}/product/${productId}/${userId}`, {\n    method: 'DELETE',\n    headers: {\n      Accept: 'application/json',\n      Authorization: `Bearer ${token}`,\n    },\n  })\n    .then((response) => {\n      return response.json();\n    })\n    .catch((err) => console.log(err));\n};\n\n// get a product\n\nexport const getProduct = (productId) => {\n  return fetch(`${API}/product/${productId}`, {\n    method: 'GET',\n  })\n    .then((response) => {\n      return response.json();\n    })\n    .catch((err) => console.log(err));\n};\n\n// update a product\n\nexport const updateProduct = (productId, userId, token, product) => {\n  return fetch(`${API}/product/${productId}/${userId}`, {\n    method: 'PUT',\n    headers: {\n      Accept: 'application/json',\n      Authorization: `Bearer ${token}`,\n    },\n    body: product,\n  })\n    .then((response) => {\n      return response.json();\n    })\n    .catch((err) => console.log(err));\n};\n\n// delete a product\n\nexport const deleteCategory = (categoryId, userId, token) => {\n  return fetch(`${API}/category/${categoryId}/${userId}`, {\n    method: 'DELETE',\n    headers: {\n      Accept: 'application/json',\n      Authorization: `Bearer ${token}`,\n    },\n  })\n    .then((response) => {\n      return response.json();\n    })\n    .catch((err) => console.log(err));\n};\n\n// get a product\n\nexport const getCategory = (categoryId) => {\n  return fetch(`${API}/category/${categoryId}`, {\n    method: 'GET',\n  })\n    .then((response) => {\n      return response.json();\n    })\n    .catch((err) => console.log(err));\n};\n\n// update a product\n\nexport const updateCategory = (categoryId, userId, token, category) => {\n  return fetch(`${API}/category/${categoryId}/${userId}`, {\n    method: 'PUT',\n    headers: {\n      Accept: 'application/json',\n      Authorization: `Bearer ${token}`,\n    },\n    body: category,\n  })\n    .then((response) => {\n      return response.json();\n    })\n    .catch((err) => console.log(err));\n};\n",
+    "static": true,
+    "longname": "C:/Users/rahul/Desktop/NCSU Courses/Software Engineering/CSC-510-SE-P2/frontend/src/admin/helper/adminapicall.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "createCategory",
+    "memberof": "src/admin/helper/adminapicall.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/admin/helper/adminapicall.js~createCategory",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/admin/helper/adminapicall.js",
+    "importStyle": "{createCategory}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "category",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "getCategories",
+    "memberof": "src/admin/helper/adminapicall.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/admin/helper/adminapicall.js~getCategories",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/admin/helper/adminapicall.js",
+    "importStyle": "{getCategories}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "createaProduct",
+    "memberof": "src/admin/helper/adminapicall.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/admin/helper/adminapicall.js~createaProduct",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/admin/helper/adminapicall.js",
+    "importStyle": "{createaProduct}",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "product",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "getProducts",
+    "memberof": "src/admin/helper/adminapicall.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/admin/helper/adminapicall.js~getProducts",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/admin/helper/adminapicall.js",
+    "importStyle": "{getProducts}",
+    "description": null,
+    "lineNumber": 50,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "deleteProduct",
+    "memberof": "src/admin/helper/adminapicall.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/admin/helper/adminapicall.js~deleteProduct",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/admin/helper/adminapicall.js",
+    "importStyle": "{deleteProduct}",
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "params": [
+      {
+        "name": "productId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "getProduct",
+    "memberof": "src/admin/helper/adminapicall.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/admin/helper/adminapicall.js~getProduct",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/admin/helper/adminapicall.js",
+    "importStyle": "{getProduct}",
+    "description": null,
+    "lineNumber": 78,
+    "undocument": true,
+    "params": [
+      {
+        "name": "productId",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "updateProduct",
+    "memberof": "src/admin/helper/adminapicall.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/admin/helper/adminapicall.js~updateProduct",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/admin/helper/adminapicall.js",
+    "importStyle": "{updateProduct}",
+    "description": null,
+    "lineNumber": 90,
+    "undocument": true,
+    "params": [
+      {
+        "name": "productId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "product",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "deleteCategory",
+    "memberof": "src/admin/helper/adminapicall.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/admin/helper/adminapicall.js~deleteCategory",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/admin/helper/adminapicall.js",
+    "importStyle": "{deleteCategory}",
+    "description": null,
+    "lineNumber": 107,
+    "undocument": true,
+    "params": [
+      {
+        "name": "categoryId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "getCategory",
+    "memberof": "src/admin/helper/adminapicall.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/admin/helper/adminapicall.js~getCategory",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/admin/helper/adminapicall.js",
+    "importStyle": "{getCategory}",
+    "description": null,
+    "lineNumber": 123,
+    "undocument": true,
+    "params": [
+      {
+        "name": "categoryId",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "updateCategory",
+    "memberof": "src/admin/helper/adminapicall.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/admin/helper/adminapicall.js~updateCategory",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/admin/helper/adminapicall.js",
+    "importStyle": "{updateCategory}",
+    "description": null,
+    "lineNumber": 135,
+    "undocument": true,
+    "params": [
+      {
+        "name": "categoryId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "category",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "src/auth/helper/index.js",
+    "content": "import {API} from '../../backend';\r\n\r\n// This is used to fetch signup, signin and signout routes\r\nexport const signup = (user) => {\r\n  return fetch(`${API}/signup`, {\r\n    method: 'POST',\r\n    headers: {\r\n      'Accept': 'application/json',\r\n      'Content-Type': 'application/json',\r\n    },\r\n    body: JSON.stringify(user),\r\n  })\r\n      .then((response) => {\r\n        return response.json();\r\n      })\r\n      .catch((err) => console.log(err));\r\n};\r\n\r\nexport const signin = (user) => {\r\n  return fetch(`${API}/signin`, {\r\n    method: 'POST',\r\n    headers: {\r\n      'Accept': 'application/json',\r\n      'Content-Type': 'application/json',\r\n    },\r\n    body: JSON.stringify(user),\r\n  })\r\n      .then((response) => {\r\n        return response.json();\r\n      })\r\n      .catch((err) => console.log(err));\r\n};\r\n\r\nexport const signout = (next) => {\r\n  if (typeof window !== 'undefined') {\r\n    localStorage.removeItem('jwt');\r\n    next();\r\n\r\n    return fetch(`${API}/signout`, {\r\n      method: 'GET',\r\n    })\r\n        .then((response) => console.log('signout success'))\r\n        .catch((err) => console.log(err));\r\n  }\r\n};\r\n\r\nexport const authenticate = (data, next) => {\r\n  if (typeof window !== 'undefined') {\r\n    localStorage.setItem('jwt', JSON.stringify(data));\r\n    next();\r\n  }\r\n};\r\n\r\nexport const isAuthenticated = () => {\r\n  if (typeof window === 'undefined') {\r\n    return false;\r\n  }\r\n\r\n  if (localStorage.getItem('jwt')) {\r\n    return JSON.parse(localStorage.getItem('jwt'));\r\n  } else {\r\n    return false;\r\n  }\r\n};\r\n\r\nexport const googleSignup = (user) => {\r\n  return fetch(`${API}/googlesignup`, {\r\n    method: 'POST',\r\n    headers: {\r\n      'Accept': 'application/json',\r\n      'Content-Type': 'application/json',\r\n    },\r\n    body: JSON.stringify(user),\r\n  })\r\n    .then((response) => {\r\n      return response.json();\r\n    })\r\n    .catch((err) => console.log(err));\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/rahul/Desktop/NCSU Courses/Software Engineering/CSC-510-SE-P2/frontend/src/auth/helper/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "signup",
+    "memberof": "src/auth/helper/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/auth/helper/index.js~signup",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/auth/helper/index.js",
+    "importStyle": "{signup}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "user",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "signin",
+    "memberof": "src/auth/helper/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/auth/helper/index.js~signin",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/auth/helper/index.js",
+    "importStyle": "{signin}",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "user",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "signout",
+    "memberof": "src/auth/helper/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/auth/helper/index.js~signout",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/auth/helper/index.js",
+    "importStyle": "{signout}",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "authenticate",
+    "memberof": "src/auth/helper/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/auth/helper/index.js~authenticate",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/auth/helper/index.js",
+    "importStyle": "{authenticate}",
+    "description": null,
+    "lineNumber": 47,
+    "undocument": true,
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "isAuthenticated",
+    "memberof": "src/auth/helper/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/auth/helper/index.js~isAuthenticated",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/auth/helper/index.js",
+    "importStyle": "{isAuthenticated}",
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "googleSignup",
+    "memberof": "src/auth/helper/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/auth/helper/index.js~googleSignup",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/auth/helper/index.js",
+    "importStyle": "{googleSignup}",
+    "description": null,
+    "lineNumber": 66,
+    "undocument": true,
+    "params": [
+      {
+        "name": "user",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/backend.js",
+    "content": "export const API = process.env.REACT_APP_BACKEND;\r\n",
+    "static": true,
+    "longname": "C:/Users/rahul/Desktop/NCSU Courses/Software Engineering/CSC-510-SE-P2/frontend/src/backend.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "variable",
+    "name": "API",
+    "memberof": "src/backend.js",
+    "static": true,
+    "longname": "src/backend.js~API",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/backend.js",
+    "importStyle": "{API}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "src/core/helper/coreapicalls.js",
+    "content": "import {API} from '../../backend';\r\n\r\nexport const getProducts = () => {\r\n  return fetch(`${API}/products`, {method: 'GET'})\r\n      .then((response) => {\r\n        return response.json();\r\n      })\r\n      .catch((err) => console.log(err));\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/rahul/Desktop/NCSU Courses/Software Engineering/CSC-510-SE-P2/frontend/src/core/helper/coreapicalls.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "getProducts",
+    "memberof": "src/core/helper/coreapicalls.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/helper/coreapicalls.js~getProducts",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/core/helper/coreapicalls.js",
+    "importStyle": "{getProducts}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "file",
+    "name": "src/core/helper/orderHelper.js",
+    "content": "import { API } from '../../backend';\r\n\r\nexport const createOrder = (userId, token, orderData) => {\r\n  return fetch(`${API}/order/create/${userId}`, {\r\n    method: 'POST',\r\n    headers: {\r\n      'Accept': 'application/json',\r\n      'Content-Type': 'application/json',\r\n      'Authorization': `Bearer ${token}`,\r\n    },\r\n    body: JSON.stringify({ order: orderData }),\r\n  })\r\n    .then((reponse) => {\r\n      return reponse.json();\r\n    })\r\n    .catch((err) => console.log(err));\r\n};\r\n\r\nexport const getAllOrders = (userId, token) => {\r\n  return fetch(`${API}/order/all/${userId}`, {\r\n    method: 'GET',\r\n    headers: {\r\n      'Accept': 'application/json',\r\n      'Content-Type': 'application/json',\r\n      'Authorization': `Bearer ${token}`,\r\n    },\r\n  })\r\n    .then((response) => {\r\n      return response.json();\r\n    })\r\n    .catch((err) => console.log(err));\r\n};",
+    "static": true,
+    "longname": "C:/Users/rahul/Desktop/NCSU Courses/Software Engineering/CSC-510-SE-P2/frontend/src/core/helper/orderHelper.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "createOrder",
+    "memberof": "src/core/helper/orderHelper.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/helper/orderHelper.js~createOrder",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/core/helper/orderHelper.js",
+    "importStyle": "{createOrder}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "orderData",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "getAllOrders",
+    "memberof": "src/core/helper/orderHelper.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/helper/orderHelper.js~getAllOrders",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/core/helper/orderHelper.js",
+    "importStyle": "{getAllOrders}",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "src/core/helper/paymentbhelper.js",
+    "content": "import { API } from '../../backend';\r\n\r\nexport const getmeToken = (userId, token) => {\r\n  return fetch(`${API}/payment/gettoken/${userId}`, {\r\n    method: 'GET',\r\n    headers: {\r\n      'Accept': 'application/json',\r\n      'Content-Type': 'application/json',\r\n      'Authorization': `Bearer ${token}`,\r\n    },\r\n  })\r\n    .then((response) => {\r\n      return response.json();\r\n    })\r\n    .catch((err) => console.log(err));\r\n};\r\n\r\nexport const processPayment = (userId, token, paymentInfo) => {\r\n  return fetch(`${API}/payment/braintree/${userId}`, {\r\n    method: 'POST',\r\n    headers: {\r\n      'Accept': 'application/json',\r\n      'Content-Type': 'application/json',\r\n      'Authorization': `Bearer ${token}`,\r\n    },\r\n    body: JSON.stringify(paymentInfo),\r\n  })\r\n    .then((reponse) => {\r\n      return reponse.json();\r\n    })\r\n    .catch((err) => console.log(err));\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/rahul/Desktop/NCSU Courses/Software Engineering/CSC-510-SE-P2/frontend/src/core/helper/paymentbhelper.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "function",
+    "name": "getmeToken",
+    "memberof": "src/core/helper/paymentbhelper.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/helper/paymentbhelper.js~getmeToken",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/core/helper/paymentbhelper.js",
+    "importStyle": "{getmeToken}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "function",
+    "name": "processPayment",
+    "memberof": "src/core/helper/paymentbhelper.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/helper/paymentbhelper.js~processPayment",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/core/helper/paymentbhelper.js",
+    "importStyle": "{processPayment}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "paymentInfo",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/user/helper/userapicalls.js",
+    "content": "import { API } from \"backend\";\r\n\r\nexport const getUser = (userId, token) => {\r\n    return fetch(`${API}/user/${userId}`, {\r\n        method: 'GET',\r\n        headers: {\r\n            'Accept': 'application/json',\r\n            'Content-Type': 'application/json',\r\n            'Authorization': `Bearer ${token}`,\r\n        },\r\n    })\r\n        .then((response) => {\r\n            return response.json();\r\n        })\r\n        .catch((err) => console.log(err));\r\n};",
+    "static": true,
+    "longname": "C:/Users/rahul/Desktop/NCSU Courses/Software Engineering/CSC-510-SE-P2/frontend/src/user/helper/userapicalls.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "getUser",
+    "memberof": "src/user/helper/userapicalls.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/user/helper/userapicalls.js~getUser",
+    "access": "public",
+    "export": true,
+    "importPath": "frontend/src/user/helper/userapicalls.js",
+    "importStyle": "{getUser}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "userId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# Getting Started with Create React App\r\n\r\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\r\n\r\n## Available Scripts\r\n\r\nIn the project directory, you can run:\r\n\r\n### `npm start`\r\n\r\nRuns the app in the development mode.\\\r\nOpen [http://localhost:3000](http://localhost:3000) to view it in your browser.\r\n\r\nThe page will reload when you make changes.\\\r\nYou may also see any lint errors in the console.\r\n\r\n### `npm test`\r\n\r\nLaunches the test runner in the interactive watch mode.\\\r\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\r\n\r\n### `npm run build`\r\n\r\nBuilds the app for production to the `build` folder.\\\r\nIt correctly bundles React in production mode and optimizes the build for the best performance.\r\n\r\nThe build is minified and the filenames include the hashes.\\\r\nYour app is ready to be deployed!\r\n\r\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\r\n\r\n### `npm run eject`\r\n\r\n**Note: this is a one-way operation. Once you `eject`, you can't go back!**\r\n\r\nIf you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\r\n\r\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.\r\n\r\nYou don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.\r\n\r\n## Learn More\r\n\r\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\r\n\r\nTo learn React, check out the [React documentation](https://reactjs.org/).\r\n\r\n### Code Splitting\r\n\r\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)\r\n\r\n### Analyzing the Bundle Size\r\n\r\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)\r\n\r\n### Making a Progressive Web App\r\n\r\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)\r\n\r\n### Advanced Configuration\r\n\r\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)\r\n\r\n### Deployment\r\n\r\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)\r\n\r\n### `npm run build` fails to minify\r\n\r\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)\r\n",
+    "longname": "C:\\Users\\rahul\\Desktop\\NCSU Courses\\Software Engineering\\CSC-510-SE-P2\\frontend\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\r\n  \"name\": \"frontend\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@react-oauth/google\": \"^0.5.1\",\r\n    \"@stripe/react-stripe-js\": \"^1.0.2\",\r\n    \"@stripe/stripe-js\": \"^1.0.1\",\r\n    \"@testing-library/jest-dom\": \"^4.2.4\",\r\n    \"@testing-library/react\": \"^9.4.0\",\r\n    \"@testing-library/user-event\": \"^7.2.1\",\r\n    \"axios\": \"^1.2.0\",\r\n    \"bootstrap-icons\": \"^1.9.1\",\r\n    \"braintree-web-drop-in\": \"^1.22.1\",\r\n    \"braintree-web-drop-in-react\": \"^1.1.0\",\r\n    \"jwt-decode\": \"^3.1.2\",\r\n    \"query-string\": \"^6.11.0\",\r\n    \"react\": \"^18.2.0\",\r\n    \"react-dom\": \"^18.2.0\",\r\n    \"react-router-dom\": \"^5.1.2\",\r\n    \"react-scripts\": \"3.4.0\",\r\n    \"swagger-jsdoc\": \"^6.2.5\",\r\n    \"swagger-ui-express\": \"^4.5.0\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": \"react-app\"\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  },\r\n  \"devDependencies\": {\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"eslint\": \"^6.6.0\",\r\n    \"prettier\": \"2.7.1\"\r\n  },\r\n  \"plugins\": [\r\n    \"prettier\"\r\n  ],\r\n  \"rules\": {\r\n    \"prettier/prettier\": \"error\"\r\n  },\r\n  \"extends\": [\r\n    \"plugin:prettier/recommended\"\r\n  ]\r\n}\r\n",
+    "longname": "C:\\Users\\rahul\\Desktop\\NCSU Courses\\Software Engineering\\CSC-510-SE-P2\\frontend\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

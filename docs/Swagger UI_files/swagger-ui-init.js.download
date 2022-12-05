@@ -1,0 +1,514 @@
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "info": {
+      "version": "1.0.0",
+      "title": "SE Project",
+      "jsonEditor": true,
+      "description": "Walpaper Store API Information",
+      "contact": {
+        "name": "Group 17"
+      },
+      "servers": [
+        "http://localhost:5000"
+      ]
+    },
+    "swagger": "2.0",
+    "paths": {
+      "/api/signup": {
+        "post": {
+          "description": "Signup API",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "NOT able to save user in DB"
+            },
+            "422": {
+              "description": "Unprocessable Entity"
+            }
+          },
+          "parameters": [
+            {
+              "name": "requestBody",
+              "in": "body",
+              "required": true,
+              "type": "object",
+              "value": "{\"name\": \"testname\", \"email\":\"test@test.com\", \"password\":\"testpassword\"}"
+            }
+          ]
+        }
+      },
+      "/api/signin": {
+        "post": {
+          "description": "SignIn API",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "NOT able to save user in DB"
+            },
+            "422": {
+              "description": "Unprocessable Entity"
+            }
+          },
+          "parameters": [
+            {
+              "name": "requestBody",
+              "in": "body",
+              "required": true,
+              "type": "object",
+              "value": "{\"email\":\"devi@gmail.com\", \"password\":\"pass\"}"
+            }
+          ]
+        }
+      },
+      "/api/signout": {
+        "get": {
+          "description": "SignOut API",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "NOT able to save user in DB"
+            },
+            "422": {
+              "description": "Unprocessable Entity"
+            }
+          }
+        }
+      },
+      "/api/googlesignup": {
+        "post": {
+          "description": "Signup API For Google Sign in",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "NOT able to save user in DB"
+            },
+            "422": {
+              "description": "Unprocessable Entity"
+            }
+          },
+          "parameters": [
+            {
+              "name": "requestBody",
+              "in": "body",
+              "required": true,
+              "type": "object",
+              "value": "{\"name\": \"testname\", \"email\":\"test@test.com\", \"password\":\"testpassword\"}"
+            }
+          ]
+        }
+      },
+      "/api/user/{userId}": {
+        "get": {
+          "description": "getUser API",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "NOT able to save user in DB"
+            },
+            "422": {
+              "description": "Unprocessable Entity"
+            }
+          },
+          "parameters": [
+            {
+              "name": "Authorization",
+              "in": "header",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "userId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ]
+        },
+        "put": {
+          "description": "updateUser API",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "NOT able to save user in DB"
+            },
+            "422": {
+              "description": "Unprocessable Entity"
+            }
+          },
+          "parameters": [
+            {
+              "name": "Authorization",
+              "in": "header",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "userId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "requestBody",
+              "in": "body",
+              "required": true,
+              "type": "object",
+              "value": "{\"name\": \"testname\", \"email\":\"test@test.com\"}"
+            }
+          ]
+        }
+      },
+      "/api/product/create/{userId}": {
+        "post": {
+          "description": "To create a product",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "problem with image/Please include all fields/File size too big!/Saving wallpaper in DB failed"
+            },
+            "401": {
+              "description": "Unauthorized"
+            }
+          },
+          "parameters": [
+            {
+              "name": "userId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "requestBody",
+              "in": "body",
+              "required": true,
+              "type": "object",
+              "value": "{\"name\":\"testProduct\", \"price\": 10, \"description\": \"Test description\", \"stock\": 2, \"category\":\"category_id\"}"
+            },
+            {
+              "name": "Authorization",
+              "in": "header",
+              "required": true,
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "/api/product/{productId}": {
+        "get": {
+          "description": "Fetch an existing product",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            }
+          },
+          "parameters": [
+            {
+              "name": "productId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "/api/product/{productId}/{userId}": {
+        "delete": {
+          "description": "To delete a product",
+          "responses": {
+            "200": {
+              "description": "Successfully deleted"
+            },
+            "400": {
+              "description": "Failed to delete this product"
+            },
+            "401": {
+              "description": "Unauthorized"
+            }
+          },
+          "parameters": [
+            {
+              "name": "product",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "userId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "Authorization",
+              "in": "header",
+              "required": true,
+              "type": "string"
+            }
+          ]
+        },
+        "put": {
+          "description": "To update a product",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "problem with image/Updation of product failed"
+            },
+            "401": {
+              "description": "Unauthorized"
+            }
+          },
+          "parameters": [
+            {
+              "name": "productId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "userId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "requestBody",
+              "in": "body",
+              "required": true,
+              "type": "object",
+              "value": "{\"name\":\"testProduct\"}"
+            },
+            {
+              "name": "Authorization",
+              "in": "header",
+              "required": true,
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "/api/products": {
+        "get": {
+          "description": "Fetch all existing products",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "NO product FOUND"
+            }
+          }
+        }
+      },
+      "/api/category/create/{userId}": {
+        "post": {
+          "description": "To create a category",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "NOT able to save category in DB"
+            },
+            "401": {
+              "description": "Unauthorized"
+            }
+          },
+          "parameters": [
+            {
+              "name": "userId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "requestBody",
+              "in": "body",
+              "required": true,
+              "type": "object",
+              "value": "{\"name\":\"testCategory\"}"
+            },
+            {
+              "name": "Authorization",
+              "in": "header",
+              "required": true,
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "/api/categories": {
+        "get": {
+          "description": "Fetch all existing categories",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "NO categories found"
+            }
+          }
+        }
+      },
+      "/api/category/{categoryId}": {
+        "get": {
+          "description": "Fetch an existing category",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            }
+          },
+          "parameters": [
+            {
+              "name": "categoryId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "/api/category/{categoryId}/{userId}": {
+        "put": {
+          "description": "To update a category",
+          "responses": {
+            "200": {
+              "description": "A successful response"
+            },
+            "400": {
+              "description": "Failed to update category"
+            },
+            "401": {
+              "description": "Unauthorized"
+            }
+          },
+          "parameters": [
+            {
+              "name": "categoryId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "userId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "requestBody",
+              "in": "body",
+              "required": true,
+              "type": "object",
+              "value": "{\"name\":\"testCategory\"}"
+            },
+            {
+              "name": "Authorization",
+              "in": "header",
+              "required": true,
+              "type": "string"
+            }
+          ]
+        },
+        "delete": {
+          "description": "To delete a category",
+          "responses": {
+            "200": {
+              "description": "Successfully deleted"
+            },
+            "400": {
+              "description": "Failed to delete this category"
+            },
+            "401": {
+              "description": "Unauthorized"
+            }
+          },
+          "parameters": [
+            {
+              "name": "categoryId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "userId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "Authorization",
+              "in": "header",
+              "required": true,
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "definitions": {},
+    "responses": {},
+    "parameters": {},
+    "securityDefinitions": {},
+    "tags": []
+  },
+  "customOptions": {}
+};
+  url = options.swaggerUrl || url
+  var urls = options.swaggerUrls
+  var customOptions = options.customOptions
+  var spec1 = options.swaggerDoc
+  var swaggerOptions = {
+    spec: spec1,
+    url: url,
+    urls: urls,
+    dom_id: '#swagger-ui',
+    deepLinking: true,
+    presets: [
+      SwaggerUIBundle.presets.apis,
+      SwaggerUIStandalonePreset
+    ],
+    plugins: [
+      SwaggerUIBundle.plugins.DownloadUrl
+    ],
+    layout: "StandaloneLayout"
+  }
+  for (var attrname in customOptions) {
+    swaggerOptions[attrname] = customOptions[attrname];
+  }
+  var ui = SwaggerUIBundle(swaggerOptions)
+
+  if (customOptions.oauth) {
+    ui.initOAuth(customOptions.oauth)
+  }
+
+  if (customOptions.authAction) {
+    ui.authActions.authorize(customOptions.authAction)
+  }
+
+  window.ui = ui
+}

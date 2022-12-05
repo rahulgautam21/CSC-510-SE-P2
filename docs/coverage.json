@@ -1,0 +1,72 @@
+{
+  "coverage": "0%",
+  "expectCount": 23,
+  "actualCount": 0,
+  "files": {
+    "src/admin/helper/adminapicall.js": {
+      "expectCount": 10,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        21,
+        34,
+        50,
+        62,
+        78,
+        90,
+        107,
+        123,
+        135
+      ]
+    },
+    "src/auth/helper/index.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        19,
+        34,
+        47,
+        54,
+        66
+      ]
+    },
+    "src/backend.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/core/helper/coreapicalls.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/core/helper/orderHelper.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        19
+      ]
+    },
+    "src/core/helper/paymentbhelper.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        18
+      ]
+    },
+    "src/user/helper/userapicalls.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    }
+  }
+}
