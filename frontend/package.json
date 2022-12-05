@@ -17,7 +17,6 @@
     "query-string": "^6.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-google-login": "^5.2.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "swagger-jsdoc": "^6.2.5",
