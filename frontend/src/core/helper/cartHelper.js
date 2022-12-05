@@ -14,10 +14,10 @@ export const addItemToCart = (item, next) => {
 };
 
 export const loadCart = () => {
+  let newProducts = []
   if (typeof window !== undefined) {
     if (localStorage.getItem('cart')) {
       let products = JSON.parse(localStorage.getItem('cart'));
-      let newProducts = []
       for (let product of products) {
         let found = false
         for (let index in newProducts) {
@@ -35,6 +35,7 @@ export const loadCart = () => {
       return newProducts;
     }
   }
+  return newProducts;
 };
 
 export const findItemInCart = (id) => {

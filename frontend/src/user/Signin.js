@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Base from '../core/Base';
 import {Redirect} from 'react-router-dom';
-
+import GoogleSignin from './GoogleSignin';
 import {signin, authenticate, isAuthenticated} from '../auth/helper';
 
 // This is used to display sign in page
@@ -117,6 +117,7 @@ const Signin = () => {
       {errorMessage()}
       {signInForm()}
       {performRedirect()}
+      {GoogleSignin()}
       <h1></h1>
     </Base>
   );

@@ -106,9 +106,11 @@ const Paymentb = ({ products, setReload = (f) => f, reload = undefined }) => {
 
   const getAmount = () => {
     let amount = 0;
-    products.map((p) => {
-      amount = amount + (p.price * p.quantity);
-    });
+    if(products){
+      products.map((p) => {
+        amount = amount + (p.price * p.quantity);
+      });
+    }
     return amount;
   };
 

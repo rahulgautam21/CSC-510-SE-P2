@@ -3,6 +3,29 @@ const { check, validationResult } = require("express-validator");
 const jwt = require("jsonwebtoken");
 const expressJwt = require("express-jwt");
 
+//Google auth logic
+exports.googleSignup = (req, res) => {
+  const user = new User(req.body);
+  const user_email = user.email;
+  User.findOne({ 'email':user_email }, (err, founduser) => {
+    let mainuser = founduser;
+    if (err || !founduser) {
+      user.save();
+      mainuser = user;
+    }
+
+    // create token
+    const token = jwt.sign({ _id: mainuser._id }, process.env.SECRET);
+    // put token in cookie
+    res.cookie("token", token, { expire: new Date() + 9999 });
+
+    // send response to front end
+    const { _id, name, email, role } = mainuser;
+    return res.json({ token, user: { _id, name, email, role } });
+  });
+  
+};
+
 // Adding user to database after signing up
 exports.signup = (req, res) => {
   const errors = validationResult(req);

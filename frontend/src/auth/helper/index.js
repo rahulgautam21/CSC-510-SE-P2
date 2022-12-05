@@ -62,3 +62,18 @@ export const isAuthenticated = () => {
     return false;
   }
 };
+
+export const googleSignup = (user) => {
+  return fetch(`${API}/googlesignup`, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(user),
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => console.log(err));
+};
