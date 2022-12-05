@@ -4,7 +4,6 @@ import { API } from '../backend';
 import Base from './Base';
 import Card from './Card';
 import { getProducts } from './helper/coreapicalls';
-import {Link, withRouter} from 'react-router-dom';
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -19,13 +18,7 @@ export default function Home() {
       }
     });
   };
-  const currentTab = (history, path) => {
-    if (history.location.pathname === path) {
-      return {color: 'red'};
-    } else {
-      return {color: '#FFFFFF'};
-    }
-  };
+
   useEffect(() => {
     loadAllProduct();
   }, []);
@@ -33,8 +26,8 @@ export default function Home() {
   return (
     <Base>
       <div className="row text-left">
-        <p className="bg_image"></p>
-        <h4 className="text-white text-left">Explore all the wallpapers</h4>
+        <p></p>
+        <h4 className="text-white">Explore all the walpapers</h4>
         <div className="row">
           {products.map((product, index) => {
             return (
