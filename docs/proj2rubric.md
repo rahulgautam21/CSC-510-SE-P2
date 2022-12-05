@@ -3,7 +3,7 @@
 |Notes|Score|Links & Support|
 |-----|---------|---------|
 |Video1 : Very important - A 5min video of new functionality, showing a significant delta from old.| 3 | | 
-|Bonus: Xfold improvement - In some aspect of the code; theoretical complexity, runtime, memory, developer time...| 3 | Hosted the app on AWS in order to increase the number of users that can interact concurrently | 
+|Bonus: Xfold improvement - In some aspect of the code; theoretical complexity, runtime, memory, developer time...| 3 | Hosted the app on AWS ec2 in order to increase the number of users that can interact concurrently. This makes it scalable to tens of 1000 of users by just adding a load balancer and duplicating the instances when need arises (which can be monitored from latency of responses from the serve/ cpu usage statistics). | 
 |Workload is spread over the whole team (one team member is often Xtimes more productive than the others, but nevertheless, here is a track record that everyone is contributing a lot)| 3 | From [GH Insights](https://github.com/rahulgautam21/CSC-510-SE-P2/graphs/contributors), team members have equally participated in scaling the original project|
 |Number of commits| 3 | From GH commits. All commits (https://github.com/rahulgautam21/CSC-510-SE-P2/graphs/commit-activity) |
 |Number of commits: by different people| 3 | From [GH Insights](https://github.com/rahulgautam21/CSC-510-SE-P2/pulse) |
