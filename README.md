@@ -96,3 +96,7 @@ Phase 2
 * Chetana
 * Sarika
 * Sri Lekha
+
+# Getting help
+
+To get help contact us at rahul.gautam21@gmail.com or shubhamdua2@gmail.com or raise a github issue.
