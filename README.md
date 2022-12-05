@@ -1,16 +1,16 @@
 # CSC-510 Software Engineering 
-[![DOI](https://zenodo.org/badge/528633904.svg)](https://zenodo.org/badge/latestdoi/528633904)
-[![Build Status](https://github.com/Sneha1b/CSC-510-SE/actions/workflows/action.yml/badge.svg)](https://github.com/Sneha1b/CSC-510-SE/actions/workflows/action.yml)
-[![SonarQube Analysis](https://github.com/Sneha1b/CSC-510-SE/actions/workflows/sonarcloud.yml/badge.svg)](https://github.com/Sneha1b/CSC-510-SE/actions/workflows/sonarcloud.yml)
-[![Code Linting Analysis Report](https://github.com/Sneha1b/CSC-510-SE/actions/workflows/lint.yml/badge.svg)](https://github.com/Sneha1b/CSC-510-SE/actions/workflows/lint.yml)
+[![DOI](https://zenodo.org/badge/568535000.svg)](https://zenodo.org/badge/latestdoi/568535000)
+[![Build Status](https://github.com/rahulgautam21/CSC-510-SE-P2/actions/workflows/action.yml/badge.svg)](https://github.com/rahulgautam21/CSC-510-SE-P2/actions/workflows/action.yml)
+[![SonarQube Analysis](https://github.com/rahulgautam21/CSC-510-SE-P2/actions/workflows/sonarcloud.yml/badge.svg)](https://github.com/rahulgautam21/CSC-510-SE-P2/actions/workflows/sonarcloud.yml)
+[![Code Linting Analysis Report](https://github.com/rahulgautam21/CSC-510-SE-P2/actions/workflows/lint.yml/badge.svg)](https://github.com/rahulgautam21/CSC-510-SE-P2/actions/workflows/lint.yml)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Sneha1b/CSC-510-SE/blob/main/README.md)
-[![GitHub issues](https://img.shields.io/github/issues/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/issues?q=is%3Aopen)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/issues?q=is%3Aclosed)
-[![Github pull requests](https://img.shields.io/github/issues-pr/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/pulls)
-[![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE/pulls?q=is%3Apr+is%3Aclosed)
-[![Github Repo size in bytes](https://img.shields.io/github/languages/code-size/Sneha1b/CSC-510-SE)](https://github.com/Sneha1b/CSC-510-SE)
-[![codecov.io Code Line Coverage](https://img.shields.io/badge/code%20coverage-63%25-green)](https://htmlpreview.github.io/?https://github.com/Sneha1b/CSC-510-SE/blob/main/backend_node/Test%20Results%20-%20Backend_Test.html)
+[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/rahulgautam21/CSC-510-SE-P2/blob/main/README.md)
+[![GitHub issues](https://img.shields.io/github/issues/rahulgautam21/CSC-510-SE-P2)](https://github.com/rahulgautam21/CSC-510-SE-P2/issues?q=is%3Aopen)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/rahulgautam21/CSC-510-SE-P2)](https://github.com/rahulgautam21/CSC-510-SE-P2/issues?q=is%3Aclosed)
+[![Github pull requests](https://img.shields.io/github/issues-pr/rahulgautam21/CSC-510-SE-P2)](https://github.com/rahulgautam21/CSC-510-SE-P2/pulls)
+[![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/rahulgautam21/CSC-510-SE-P2)](https://github.com/rahulgautam21/CSC-510-SE-P2/pulls?q=is%3Apr+is%3Aclosed)
+[![Github Repo size in bytes](https://img.shields.io/github/languages/code-size/rahulgautam21/CSC-510-SE-P2)](https://github.com/rahulgautam21/CSC-510-SE-P2)
+[![codecov.io Code Line Coverage](https://img.shields.io/badge/code%20coverage-63%25-green)](https://github.com/rahulgautam21/CSC-510-SE-P2/blob/main/backend_node/Test%20Results%20-%20Backend_Test.html)
 
 # Project Description
 In today's customer centric economy, products tweaked to the customer needs and desires have the highest market value. The recent boom in social media advertisement, has led to huge increase in demand for customized merchandise from small/local businesses. And most of the times these local businesses cannot get registered to world wide e-commerce sites due to local supply of the product.
