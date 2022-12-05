@@ -88,7 +88,8 @@ We have used the MERN stack, a free and open-source JavaScript software stack fo
 * Sneha Madle
 * Yugalee Vijay Patil
 
-- Phase 2
+
+Phase 2
 * Shubham
 * Rahul
 * Shreya
