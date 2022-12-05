@@ -1,13 +1,13 @@
-import { API } from '../../backend';
+import { API } from "../../backend";
 
 // category calls
 export const createCategory = (userId, token, category) => {
   return fetch(`${API}/category/create/${userId}`, {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token}`,
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
     },
     body: JSON.stringify(category),
   })
@@ -20,7 +20,7 @@ export const createCategory = (userId, token, category) => {
 // get all categories
 export const getCategories = () => {
   return fetch(`${API}/categories`, {
-    method: 'GET',
+    method: "GET",
   })
     .then((response) => {
       return response.json();
@@ -33,9 +33,9 @@ export const getCategories = () => {
 // create a product
 export const createaProduct = (userId, token, product) => {
   return fetch(`${API}/product/create/${userId}`, {
-    method: 'POST',
+    method: "POST",
     headers: {
-      Accept: 'application/json',
+      Accept: "application/json",
       Authorization: `Bearer ${token}`,
     },
     body: product,
@@ -49,7 +49,7 @@ export const createaProduct = (userId, token, product) => {
 // get all products
 export const getProducts = () => {
   return fetch(`${API}/products`, {
-    method: 'GET',
+    method: "GET",
   })
     .then((response) => {
       return response.json();
@@ -61,9 +61,9 @@ export const getProducts = () => {
 
 export const deleteProduct = (productId, userId, token) => {
   return fetch(`${API}/product/${productId}/${userId}`, {
-    method: 'DELETE',
+    method: "DELETE",
     headers: {
-      Accept: 'application/json',
+      Accept: "application/json",
       Authorization: `Bearer ${token}`,
     },
   })
@@ -77,7 +77,7 @@ export const deleteProduct = (productId, userId, token) => {
 
 export const getProduct = (productId) => {
   return fetch(`${API}/product/${productId}`, {
-    method: 'GET',
+    method: "GET",
   })
     .then((response) => {
       return response.json();
@@ -89,9 +89,9 @@ export const getProduct = (productId) => {
 
 export const updateProduct = (productId, userId, token, product) => {
   return fetch(`${API}/product/${productId}/${userId}`, {
-    method: 'PUT',
+    method: "PUT",
     headers: {
-      Accept: 'application/json',
+      Accept: "application/json",
       Authorization: `Bearer ${token}`,
     },
     body: product,
@@ -106,9 +106,9 @@ export const updateProduct = (productId, userId, token, product) => {
 
 export const deleteCategory = (categoryId, userId, token) => {
   return fetch(`${API}/category/${categoryId}/${userId}`, {
-    method: 'DELETE',
+    method: "DELETE",
     headers: {
-      Accept: 'application/json',
+      Accept: "application/json",
       Authorization: `Bearer ${token}`,
     },
   })
@@ -122,7 +122,7 @@ export const deleteCategory = (categoryId, userId, token) => {
 
 export const getCategory = (categoryId) => {
   return fetch(`${API}/category/${categoryId}`, {
-    method: 'GET',
+    method: "GET",
   })
     .then((response) => {
       return response.json();
@@ -134,9 +134,9 @@ export const getCategory = (categoryId) => {
 
 export const updateCategory = (categoryId, userId, token, category) => {
   return fetch(`${API}/category/${categoryId}/${userId}`, {
-    method: 'PUT',
+    method: "PUT",
     headers: {
-      Accept: 'application/json',
+      Accept: "application/json",
       Authorization: `Bearer ${token}`,
     },
     body: category,

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import '../styles.css';
-import { API } from '../backend';
-import Base from './Base';
-import Card from './Card';
-import { loadCart } from './helper/cartHelper';
-import Paymentb from './Paymentb';
+import React, { useState, useEffect } from "react";
+import "../styles.css";
+import { API } from "../backend";
+import Base from "./Base";
+import Card from "./Card";
+import { loadCart } from "./helper/cartHelper";
+import Paymentb from "./Paymentb";
 
 const Cart = () => {
   const [products, setProducts] = useState([]);
@@ -41,18 +41,16 @@ const Cart = () => {
   };
 
   return (
-    <Base title='Cart Page' description='Ready to checkout'>
-      <div className='row text-center'>
-        <div className='col-6'>
-          {products && products.length > 0 ?
-            (
-              loadAllProducts(products)
-            ) :
-            (
-              <h4>No products</h4>
-            )}
+    <Base title="Cart Page" description="Ready to checkout">
+      <div className="row text-center">
+        <div className="col-6">
+          {products && products.length > 0 ? (
+            loadAllProducts(products)
+          ) : (
+            <h4>No products</h4>
+          )}
         </div>
-        <div className='col-6'>
+        <div className="col-6">
           <Paymentb products={products} setReload={setReload} />
         </div>
       </div>

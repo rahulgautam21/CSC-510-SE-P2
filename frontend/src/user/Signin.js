@@ -1,43 +1,43 @@
-import React, {useState} from 'react';
-import Base from '../core/Base';
-import {Redirect} from 'react-router-dom';
-import GoogleSignin from './GoogleSignin';
-import {signin, authenticate, isAuthenticated} from '../auth/helper';
+import React, { useState } from "react";
+import Base from "../core/Base";
+import { Redirect } from "react-router-dom";
+import GoogleSignin from "./GoogleSignin";
+import { signin, authenticate, isAuthenticated } from "../auth/helper";
 
 // This is used to display sign in page
 const Signin = () => {
   const [values, setValues] = useState({
-    email: '',
-    password: '',
-    error: '',
+    email: "",
+    password: "",
+    error: "",
     loading: false, // To show loading msg to user that somethings going on
     didRedirect: false, // Redirect user after he signs in
   });
 
-  const {email, password, error, loading, didRedirect} = values;
-  const {user} = isAuthenticated();
+  const { email, password, error, loading, didRedirect } = values;
+  const { user } = isAuthenticated();
 
   const handleChange = (name) => (event) => {
-    setValues({...values, error: false, [name]: event.target.value});
+    setValues({ ...values, error: false, [name]: event.target.value });
   };
 
   const onSubmit = (event) => {
     event.preventDefault();
-    setValues({...values, error: false, loading: true});
-    signin({email, password})
-        .then((data) => {
-          if (data.error) {
-            setValues({...values, error: data.error, loading: false});
-          } else {
-            authenticate(data, () => {
-              setValues({
-                ...values,
-                didRedirect: true,
-              });
+    setValues({ ...values, error: false, loading: true });
+    signin({ email, password })
+      .then((data) => {
+        if (data.error) {
+          setValues({ ...values, error: data.error, loading: false });
+        } else {
+          authenticate(data, () => {
+            setValues({
+              ...values,
+              didRedirect: true,
             });
-          }
-        })
-        .catch(console.log('Signin request failed'));
+          });
+        }
+      })
+      .catch(console.log("Signin request failed"));
   };
 
   const performRedirect = () => {
@@ -70,7 +70,7 @@ const Signin = () => {
         <div className="col-md-6 offset-sm-3 text-left">
           <div
             className="alert alert-danger"
-            style={{display: error ? '' : 'none'}}
+            style={{ display: error ? "" : "none" }}
           >
             {error}
           </div>
@@ -87,7 +87,7 @@ const Signin = () => {
             <div className="form-group">
               <label className="text-light">Email</label>
               <input
-                onChange={handleChange('email')}
+                onChange={handleChange("email")}
                 className="form-control"
                 type="email"
                 value={email}
@@ -96,7 +96,7 @@ const Signin = () => {
             <div className="form-group">
               <label className="text-light">Password</label>
               <input
-                onChange={handleChange('password')}
+                onChange={handleChange("password")}
                 className="form-control"
                 type="password"
                 value={password}

@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { loadCart, cartEmpty } from './helper/cartHelper';
-import { Link } from 'react-router-dom';
-import { getmeToken, processPayment } from './helper/paymentbhelper';
-import { createOrder } from './helper/orderHelper';
-import { isAuthenticated } from '../auth/helper';
+import React, { useState, useEffect } from "react";
+import { loadCart, cartEmpty } from "./helper/cartHelper";
+import { Link } from "react-router-dom";
+import { getmeToken, processPayment } from "./helper/paymentbhelper";
+import { createOrder } from "./helper/orderHelper";
+import { isAuthenticated } from "../auth/helper";
 
-import DropIn from 'braintree-web-drop-in-react';
+import DropIn from "braintree-web-drop-in-react";
 
 const Paymentb = ({ products, setReload = (f) => f, reload = undefined }) => {
   const [info, setInfo] = useState({
     loading: false,
     success: false,
     clientToken: null,
-    error: '',
+    error: "",
     instance: {},
   });
 
@@ -40,20 +40,20 @@ const Paymentb = ({ products, setReload = (f) => f, reload = undefined }) => {
               options={{
                 authorization: info.clientToken,
                 paypal: {
-                  flow: "vault"
+                  flow: "vault",
                 },
                 venmo: {
                   allowNewBrowserTab: false,
                 },
                 googlePay: {
                   googlePayVersion: 2,
-                  merchantId: 'merchant-id-from-google',
+                  merchantId: "merchant-id-from-google",
                   transactionInfo: {
-                    totalPriceStatus: 'FINAL',
+                    totalPriceStatus: "FINAL",
                     totalPrice: getAmount().toString(),
-                    currencyCode: 'USD'
+                    currencyCode: "USD",
                   },
-                }
+                },
               }}
               onInstance={(instance) => (info.instance = instance)}
             />
@@ -84,7 +84,7 @@ const Paymentb = ({ products, setReload = (f) => f, reload = undefined }) => {
       processPayment(userId, token, paymentData)
         .then((response) => {
           setInfo({ ...info, success: response.success, loading: false });
-          console.log('PAYMENT SUCCESS');
+          console.log("PAYMENT SUCCESS");
           const orderData = {
             products,
             transaction_id: response.transaction.id,
@@ -92,23 +92,23 @@ const Paymentb = ({ products, setReload = (f) => f, reload = undefined }) => {
           };
           createOrder(userId, token, orderData);
           cartEmpty(() => {
-            console.log('Did we got a crash?');
+            console.log("Did we got a crash?");
           });
 
           setReload(!reload);
         })
         .catch((error) => {
           setInfo({ loading: false, success: false });
-          console.log('PAYMENT FAILED');
+          console.log("PAYMENT FAILED");
         });
     });
   };
 
   const getAmount = () => {
     let amount = 0;
-    if(products){
+    if (products) {
       products.map((p) => {
-        amount = amount + (p.price * p.quantity);
+        amount = amount + p.price * p.quantity;
       });
     }
     return amount;

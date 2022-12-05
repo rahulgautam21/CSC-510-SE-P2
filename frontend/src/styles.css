@@ -27,27 +27,27 @@ footer {
   color: white;
 }
 
-.google_button{
+.google_button {
   background-color: black;
-  padding:10px;
-  border-radius: .5rem;
-  color:white;
-  border:none;
+  padding: 10px;
+  border-radius: 0.5rem;
+  color: white;
+  border: none;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-.google_button:hover{
-  border:2px solid white;
+.google_button:hover {
+  border: 2px solid white;
 }
 
-.google_button i{
+.google_button i {
   margin-right: 10px;
 }
 
-.separator{
+.separator {
   font-size: calc(10px + 2vmin);
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
@@ -58,12 +58,12 @@ tr {
 th {
   padding: 15px;
 }
-.separator .line{
+.separator .line {
   height: 3px;
   flex: 1;
   background-color: #000;
 }
-.separator h2{
+.separator h2 {
   padding: 0 2rem;
 }
 
@@ -87,7 +87,7 @@ th {
 }
 .about-li {
   padding: 5px 10px;
-  background-color: #EEEEEE;
-  border: 1px solid #DDDDDD;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
   color: #000;
 }

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Base from '../core/Base';
-import { Link } from 'react-router-dom';
-import { isAuthenticated } from '../auth/helper';
-import { getProducts, deleteProduct } from './helper/adminapicall';
+import React, { useState, useEffect } from "react";
+import Base from "../core/Base";
+import { Link } from "react-router-dom";
+import { isAuthenticated } from "../auth/helper";
+import { getProducts, deleteProduct } from "./helper/adminapicall";
 
 // Delete product from the application
 const ManageProducts = () => {
@@ -42,7 +42,9 @@ const ManageProducts = () => {
       </Link>
       <div className="row">
         <div className="col-12">
-          <h2 className="text-center text-white my-3">Total {products.length ?? 0} products</h2>
+          <h2 className="text-center text-white my-3">
+            Total {products.length ?? 0} products
+          </h2>
 
           {products.map((product, index) => {
             return (

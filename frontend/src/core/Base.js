@@ -1,9 +1,9 @@
-import React from 'react';
-import Menu from './Menu';
+import React from "react";
+import Menu from "./Menu";
 
 const Base = ({
-  title = 'Welcome to Walpaper Store  ',
-  className = 'bg-blue text-white',
+  title = "Welcome to Walpaper Store  ",
+  className = "bg-blue text-white",
   children,
 }) => (
   <div>
@@ -31,7 +31,7 @@ const Base = ({
       <div className="container-fluid bg-blue text-white text-left py-3">
         <h6>CSC-510: Software Engineering Project</h6>
         <h6>
-          All rights reserved{' '}
+          All rights reserved{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
