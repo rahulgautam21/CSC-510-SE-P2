@@ -42,7 +42,7 @@ const AllOrdersPage = () => {
                         <th>{index}.</th>
                         <th>{order.user.name}</th>
                         <th>{order.products.length}</th>
-                        <th>{order.amount}</th>
+                        <th>${order.amount}</th>
                         <th>{order.status}</th>
                     </tr>
                 })
