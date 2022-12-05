@@ -95,7 +95,7 @@ Phase 2
 * Shreya
 * Chetana
 * Sarika
-* Sri Lekha
+* Srilekha
 
 # Getting help
 
