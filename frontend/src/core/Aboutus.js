@@ -40,5 +40,5 @@ export default function Aboutus() {
         </ul>
       </div>
     </Base>
-  );
+  )
 }
