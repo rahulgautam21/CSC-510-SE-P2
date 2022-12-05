@@ -139,4 +139,10 @@ th {
   padding: 70px 16px;
 
 }
+footer {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
 
