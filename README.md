@@ -101,4 +101,4 @@ Phase 2
 
 # Getting help
 
-To get help contact us at rahul.gautam21@gmail.com or shubhamdua2@gmail.com or raise a github issue.
+To get help contact us at rahul.gautam21@gmail.com or shubhamdua02@gmail.com or raise a github issue.
