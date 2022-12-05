@@ -19,7 +19,9 @@ We design a custom e-commerce site that can be run by any local business owner f
 
 <img align=center src="https://github.com/Sneha1b/CSC-510-SE/blob/main/backend_node/misc/poster.png" width="900">
 
-The project is hosted on AWS ec2, completely scalable by adding more instances when the customer growth increases by adding more instances and adding a load balancer. The basic version of the app is available [here](http://54.190.102.173)
+#Scalability
+
+The project is hosted on AWS ec2, completely scalable by adding more instances when the customer growth increases by adding more instances and adding a load balancer. The basic version of the app is available [here](http://54.190.102.173). The architecture diagram for the same can be found [here](https://github.com/rahulgautam21/CSC-510-SE-P2/blob/main/docs/image/elb_auto_scale_instances_2.png) where an instance means 'ec2 instance' and AWS has an autoscaling feature - that when configured, will be able to track the cpu usage and add more instances (as well as remove unused instances) as per traffic.
 
 
 # Demo
