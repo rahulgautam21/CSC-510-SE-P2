@@ -19,6 +19,16 @@ const Menu = ({history}) => (
         </Link>
       </li>
       <li className="nav-item">
+        <Link style={currentTab(history, '/aboutus')} className="nav-link" to="/aboutus">
+          About Us
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link style={currentTab(history, '/contactus')} className="nav-link" to="/contactus">
+          Contact Us
+        </Link>
+      </li>
+      <li className="nav-item">
         <Link
           style={currentTab(history, '/cart')}
           className="nav-link"

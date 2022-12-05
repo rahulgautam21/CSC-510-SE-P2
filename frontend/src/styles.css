@@ -66,3 +66,28 @@ th {
 .separator h2{
   padding: 0 2rem;
 }
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.about-team {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5dd1;
+  color: white;
+}
+
+.about-ul {
+  list-style: none;
+  padding: 0;
+}
+.about-li {
+  padding: 5px 10px;
+  background-color: #EEEEEE;
+  border: 1px solid #DDDDDD;
+  color: #000;
+}
