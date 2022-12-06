@@ -27,9 +27,7 @@ The project is hosted on AWS ec2, completely scalable by adding more instances w
 # Demo
 
 ### Changes for phase 2 for this project. Delta video with phase 1
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/aa90873fe6c64f8d9b365d7af6dd97ad" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/aa90873fe6c64f8d9b365d7af6dd97ad" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+https://user-images.githubusercontent.com/12576405/205773184-330b771c-dda7-4a37-8e89-0460ea688784.mp4
 
 [Click here to check the demo video for Phase 1](https://drive.google.com/file/d/1RdRbiGIPSofx5wDev_UIDP-WZddjx8gi/view?usp=drivesdk)
 
