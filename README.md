@@ -46,6 +46,8 @@ https://user-images.githubusercontent.com/12576405/205773184-330b771c-dda7-4a37-
 8. Fixed the payment flow 
 9. All the user orders can now be tracked in the admin dashboard.
 10. Added About Us and Contact Us pages
+11. Enriched the homepage with guidelines on how to use the website.
+P.S - It can not only be used to sell wallpaper but anything.
 
 # Technical Description
 The project was taken up as a part of the course work for CSC 510 Software Engineering during Masters. The project aims at creating a microservice, build it ground up and understand various aspects of software development in the industry.
