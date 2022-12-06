@@ -20,7 +20,7 @@
 |Use of code formatters. | 3 | Used [**Prettier**](https://prettier.io/) for code-formatting ([Evidence here](https://github.com/rahulgautam21/CSC-510-SE-P2/blob/main/frontend/.prettierrc.json)). Ran using `npx prettier --write .` to format all the `javascript` files |
 |Use of syntax checkers. | 3 | [**Eslint**](https://eslint.org/) used for syntax checking ([Evidence here](https://github.com/rahulgautam21/CSC-510-SE-P2/blob/main/.github/workflows/lint.yml)), ran as a part of commit pipeline |
 |Use of code coverage | 3 | Code Coverage included [Evidence](https://github.com/rahulgautam21/CSC-510-SE-P2/blob/main/backend_node/Test%20Results%20-%20Backend_Test.html) |
-|Other automated analysis tools| 3 | Used SonarCloud to find issues [Evidence](https://github.com/rahulgautam21/CSC-510-SE-P2/security) |
+|Other automated analysis tools| 3 | Used SonarCloud to find issues [Evidence](https://github.com/rahulgautam21/CSC-510-SE-P2/security/code-scanning) |
 |Test cases exist| 3 | Test Cases exist ([Evidence](https://github.com/rahulgautam21/CSC-510-SE-P2/tree/main/backend_node/test)) |
 |Test cases are routinely executed|  | |
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3 |  [Contribution](https://github.com/rahulgautam21/CSC-510-SE-P2/blob/main/CONTRIBUTING.md) information is up to date. Links are included within the file to point to additional resources or areas on the git page that should be used when contributing. |
