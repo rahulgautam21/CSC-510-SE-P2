@@ -34,6 +34,19 @@ https://user-images.githubusercontent.com/12576405/205773184-330b771c-dda7-4a37-
 # RoadMap
 [Click here to check the roadmap](https://github.com/users/Sneha1b/projects/1/views/1)
 
+# New Features
+
+1. Added Google Authenticated Sign In 
+2. Hosted the application on AWS EC2 
+3. Checked for real time stock of the product before allowing the user to add it into the cart automatically.
+4. Handled redundancy by grouping similar items in the cart
+5. Fixed the order history page for the user
+6. Fixed the update category function
+7. Fixed the bug in manage category function
+8. Fixed the payment flow 
+9. All the user orders can now be tracked in the admin dashboard.
+10. Added About Us and Contact Us pages
+
 # Technical Description
 The project was taken up as a part of the course work for CSC 510 Software Engineering during Masters. The project aims at creating a microservice, build it ground up and understand various aspects of software development in the industry.
 
